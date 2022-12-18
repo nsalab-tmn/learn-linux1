@@ -1,0 +1,291 @@
+{
+    "title": "Тест на понимание темы: ",
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H30M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 100,
+    "assets": {
+        "$ref": "./assets"
+    },
+    "questions": [
+        {
+            "question": "Какая горячая клавиша или команда Bash выполняет переход к началу предыдущего слова в командной строке?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Нажатие Ctrl+Стрелка влево",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Ctrl+K",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Ctrl+A",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "!string",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "!number",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая горячая клавиша или команда Bash разделяет несколько команд в одной строке?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Нажатие Tab",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "history",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": ";",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "!string",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Esc+.",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая горячая клавиша или команда Bash используется для очистки символов от курсора до конца командной строки?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Нажатие Ctrl+Стрелка влево",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Ctrl+К",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Ctrl+A",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": ";",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Esc+.",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая горячая клавиша или команда Bash используется для повторного выполнения последней команды путем сопоставления имени команды?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Нажатие Tab",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "!number",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "!string",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "history",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Esc+.",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая горячая клавиша или команда Bash используется для завершения команд, имен файлов и опций?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": ";",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "!number",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "history",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Tab",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Esc+.",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая горячая клавиша или команда Bash повторно выполняет определенную команду из списка в истории?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Нажатие Tab",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "!number",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "!string",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "history",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Esc+.",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая горячая клавиша или команда Bash переходит в начало командной строки?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "!number",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "!string",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Ctrl+Стрелка влево",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Ctrl+К",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Ctrl+A",
+                    "correct": true,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая горячая клавиша или команда Bash отображает список предыдущих команд?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Нажатие Tab",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "!string",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "!number",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "history",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Esc+.",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая горячая клавиша или команда Bash копирует последний аргумент предыдущих команд?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Нажатие Ctrl+К",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Ctrl+A",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "!number",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Нажатие Esc+.",
+                    "correct": true,
+                    "comment": ""
+                }
+            ]
+        }
+    ]
+}

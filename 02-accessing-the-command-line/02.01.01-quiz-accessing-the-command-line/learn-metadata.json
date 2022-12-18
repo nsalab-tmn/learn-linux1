@@ -1,0 +1,225 @@
+{
+    "title": "Тест на понимание темы: ",
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H30M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 100,
+    "assets": {
+        "$ref": "./assets"
+    },
+    "questions": [
+        {
+            "question": "Какой термин описывает интерпретатор, выполняющий команды в виде строк?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Команда",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Консоль",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Оболочка",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "Терминал",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой термин описывает визуальную подсказку, указывающую, что интерактивная оболочка ожидает ввода пользователем команды?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Аргумент",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Команда",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Опция",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Приглашение",
+                    "correct": true,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой термин описывает имя запускаемой программы?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Аргумент",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Команда",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "Опция",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Приглашение",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой термин описывает часть командной строки, которая регулирует поведение команды?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Аргумент",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Команда",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Опция",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "Приглашение",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой термин описывает часть командной строки, определяющую цель, с которой должна работать команда?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Аргумент",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "Команда",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Опция",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Приглашение",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой термин описывает аппаратный дисплей и клавиатуру, используемые для взаимодействия с системой?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Физическая консоль",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "Виртуальная консоль",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Оболочка",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Терминал",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой термин описывает одну из нескольких логических консолей, каждая из которых может поддерживать независимый сеанс входа в систему?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Физическая консольe",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Виртуальная консоль",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "Оболочка",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Терминал",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой термин описывает интерфейс, который предоставляет дисплей для вывода и клавиатуру для ввода в сеанс оболочки?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Консоль",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Виртуальная консоль",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Оболочка",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "Терминал",
+                    "correct": true,
+                    "comment": ""
+                }
+            ]
+        }
+    ]
+}

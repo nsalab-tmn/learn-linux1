@@ -1,0 +1,251 @@
+{
+    "title": "Тест на понимание темы: ",
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H30M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 100,
+    "assets": {
+        "$ref": "./assets"
+    },
+    "questions": [
+        {
+            "question": "Какой каталог содержит постоянные системные данные конфигурации?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "/etc",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "/root",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/run",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/usr",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой каталог является верхним в иерархии файловой системы Linux?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "/etc",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "/home/root",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/root",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой каталог содержит домашние каталоги пользователей?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "/",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/home",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "/root",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/user",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "В каком каталоге находятся временные файлы?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "/tmp",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "/trash",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/run",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/var",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой каталог содержит динамические данные, например, для баз данных и веб-сайтов?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "/etc",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/run",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/usr",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/var",
+                    "correct": true,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой каталог является домашним каталогом суперпользователя?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "/etc",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/home/root",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/root",
+                    "correct": true,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой каталог содержит обычные команды и утилиты?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "/commands",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/run",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/usr/bin",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "/usr/sbin",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой каталог содержит непостоянные данные выполняемых процессов?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "/tmp",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/etc",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/run",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "/var",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой каталог содержит установленные программы и библиотеки?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "/etc",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/lib",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "/usr",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "/var",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        }
+    ]
+}

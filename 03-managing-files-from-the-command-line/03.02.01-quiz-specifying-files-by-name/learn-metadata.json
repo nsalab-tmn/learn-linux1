@@ -1,0 +1,230 @@
+{
+    "title": "Тест на понимание темы: ",
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H30M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 100,
+    "assets": {
+        "$ref": "./assets"
+    },
+    "questions": [
+        {
+            "question": "Какая команда используется для возврата в домашний каталог текущего пользователя, предполагая, что текущий рабочий каталог — /tmp, а домашний каталог — /home/user?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "cd",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd ..",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd .",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd *",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd /home",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая команда отображает абсолютный путь к текущему местоположению?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "cd",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "pwd",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "ls ~",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "ls -d",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая команда всегда будет возвращать вас в рабочий каталог, который использовался до текущего рабочего каталога?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "cd -",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd -p",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd ~",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd ..",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая команда всегда будет изменять рабочий каталог на два уровня выше текущего местоположения?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "cd ~",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd ../",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd ../..",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd -u2",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая команда выводит список файлов в текущем расположении в длинном формате, включая скрытые файлы?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "llong ~",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "ls -a",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "ls -l",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "ls -al",
+                    "correct": true,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая команда всегда будет менять рабочий каталог на /bin?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "cd bin",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd /bin",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd ~bin",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd -bin",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая команда всегда будет менять рабочий каталог на родительский для текущего местоположения?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "cd ~",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd ..",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd ../..",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd -u1",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какая команда изменит рабочий каталог на /tmp, если текущий рабочий каталог /home/student?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "cd tmp",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd ..",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd ../../tmp",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "cd ~tmp",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        }
+    ]
+}

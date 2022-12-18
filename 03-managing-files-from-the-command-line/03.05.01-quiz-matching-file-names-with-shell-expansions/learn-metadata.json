@@ -1,0 +1,209 @@
+{
+    "title": "Тест на понимание темы: ",
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H30M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 100,
+    "assets": {
+        "$ref": "./assets"
+    },
+    "questions": [
+        {
+            "question": "Какой шаблон будет соответствовать только именам файлов, оканчивающимся на «b»?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "b*",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "*b",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "*b*",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "[!b]*",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой шаблон будет соответствовать только именам файлов, начинающимся с «b»?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "b*",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "*b",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "*b*",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "[!b]*",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой шаблон будет соответствовать только именам файлов, где первый символ не \"b\"?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "b*",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "*b",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "*b*",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "[!b]*",
+                    "correct": true,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой шаблон будет соответствовать всем именам файлов, содержащим «b»?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "b*",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "*b",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "*b*",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "[!b]*",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой шаблон будет соответствовать только именам файлов, которые содержат число?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "*#*",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "*[[:digit:]]*",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "*[digit]*",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "[0-9]",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой шаблон будет соответствовать только именам файлов, начинающимся с заглавной буквы?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "^?*",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "^*",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "[upper]*",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "[[:upper:]]*",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "[[CAP]]*",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        },
+        {
+            "question": "Какой шаблон будет соответствовать только именам файлов длиной не менее трех символов?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "???*",
+                    "correct": true,
+                    "comment": ""
+                },
+                {
+                    "answer": "???",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "\\3*",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "+++*",
+                    "correct": false,
+                    "comment": ""
+                },
+                {
+                    "answer": "...*",
+                    "correct": false,
+                    "comment": ""
+                }
+            ]
+        }
+    ]
+}
