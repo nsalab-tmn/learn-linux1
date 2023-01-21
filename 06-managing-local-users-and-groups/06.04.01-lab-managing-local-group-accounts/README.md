@@ -26,45 +26,62 @@
 
 2.	На servera с помощью команды `sudo` переключитесь на пользователя *root*, чтобы унаследовать полную среду пользователя *root*.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ sudo su -
     [sudo] password for student: student
     [root@servera ~]# 
     ```
+    </details>
 
 3.	Создайте дополнительную группу *operators* с GID 30000.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# groupadd -g 30000 operators
     ```
+    </details>
 
 4.	Создайте еще одну дополнительную группу с именем *admin*.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# groupadd admin
     ```
+    </details>
 
 5.	Убедитесь, что дополнительные группы *operators* и *admin* существуют.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# tail /etc/group
     ...output omitted...
     operators:x:30000:
     admin:x:30001:
     ```
+    </details>
 
 6.	Убедитесь, что пользователи *operator1*, *operator2* и *operator3* принадлежат к группе *operators*.
 
     6.1.	Добавьте пользователей *operator1*, *operator2* и *operator3* в группу *operators*.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# usermod -aG operators operator1
     [root@servera ~]# usermod -aG operators operator2
     [root@servera ~]# usermod -aG operators operator3
     ```
+    </details>
 
     6.2.	Убедитесь, что пользователи были успешно добавлены в группу.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# id operator1
     uid=1002(operator1) gid=1002(operator1) groups=1002(operator1),30000(operators)
@@ -73,19 +90,25 @@
     [root@servera ~]# id operator3
     uid=1004(operator3) gid=1004(operator3) groups=1004(operator3),30000(operators)
     ```
+    </details>
 
 7.	Убедитесь, что пользователи *sysadmin1*, *sysadmin2* и *sysadmin3* принадлежат к группе *admin*. Включите права администратора для всех участников группы *admin*. Убедитесь, что любой участник группы *admin* может выполнять административные команды.
 
     7.1.	Добавьте пользователей *sysadmin1*, *sysadmin2* и *sysadmin3* в группу *admin*.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# usermod -aG admin sysadmin1
     [root@servera ~]# usermod -aG admin sysadmin2
     [root@servera ~]# usermod -aG admin sysadmin3
     ```
+    </details>
 
     7.2.	Убедитесь, что пользователи были успешно добавлены в группу.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# id sysadmin1
     uid=1005(sysadmin1) gid=1005(sysadmin1) groups=1005(sysadmin1),30001(admin)
@@ -94,30 +117,40 @@
     [root@servera ~]# id sysadmin3
     uid=1007(sysadmin3) gid=1007(sysadmin3) groups=1007(sysadmin3),30001(admin)
     ```
+    </details>
 
     7.3.	Проверьте участников дополнительных групп, просмотрев файл **/etc/group**.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# tail /etc/group
     ...output omitted...
     operators:x:30000:operator1,operator2,operator3
     admin:x:30001:sysadmin1,sysadmin2,sysadmin3
     ```
+    </details>
 
     7.4.	Создайте файл **/etc/sudoers.d/admin**, чтобы у участников группы *admin* были полные административные права.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# echo "%admin ALL=(ALL) ALL" >> /etc/sudoers.d/admin
     ```
+    </details>
 
     7.5.	Переключитесь на пользователя *sysadmin1* (участника группы *admin*) и убедитесь, что вы можете выполнить команду `sudo` как *sysadmin1*.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# su - sysadmin1
     [sysadmin1@servera ~]$ sudo cat /etc/sudoers.d/admin
     [sudo] password for sysadmin1: redhat
     %admin ALL=(ALL) ALL
     ```
+    </details>
 
     7.6.	Выйдите из оболочки пользователя *sysadmin1*, чтобы вернуться в оболочку пользователя *root*.
 

@@ -18,11 +18,11 @@
 
 1.	С помощью команды `ssh` войдите на **servera** как пользователь *student*. Системы настроены на использование ключей SSH для аутентификации, поэтому пароль не требуется.
 
-```shell
-[student@workstation ~]$ ssh student@servera
-...output omitted...
-[student@servera ~]$ 
-```
+    ```shell
+    [student@workstation ~]$ ssh student@servera
+    ...output omitted...
+    [student@servera ~]$ 
+    ```
 
 2.	Создайте жесткую ссылку **/home/student/backups/source.backup** для существующего файла **/home/student/files/source.file**.
 

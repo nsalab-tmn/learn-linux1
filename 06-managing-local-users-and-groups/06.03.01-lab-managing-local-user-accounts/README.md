@@ -26,23 +26,31 @@
 
 2.	На **servera** с помощью команды `sudo` переключитесь на пользователя *root*, чтобы перейти в среду оболочки пользователя *root*.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ sudo su -
     [sudo] password for student: student
     [root@servera ~]# 
     ```
+    </details>
 
 3.	Создайте пользователя *operator1* и убедитесь, что он существует в системе.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# useradd operator1
     [root@servera ~]# tail /etc/passwd
     ...output omitted...
     operator1:x:1002:1002::/home/operator1:/bin/bash
     ```
+    </details>
 
 4.	Задайте для пользователя *operator1* пароль *P@ssw0rd*.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# passwd operator1
     Changing password for user operator1.
@@ -51,11 +59,14 @@
     Retype new password: P@ssw0rd
     passwd: all authentication tokens updated successfully.
     ```
+    </details>
 
 5.	Создайте дополнительных пользователей с именами *operator2* и *operator3*. Задайте для них пароль *P@ssw0rd*.
 
     5.1.	Добавьте пользователя *operator2*. Задайте для пользователя *operator2* пароль *P@ssw0rd*.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# useradd operator2
     [root@servera ~]# passwd operator2
@@ -65,9 +76,12 @@
     Retype new password: P@ssw0rd
     passwd: all authentication tokens updated successfully.
     ```
+    </details>
 
     5.2.	Добавьте пользователя *operator3*. Задайте для пользователя *operator3* пароль *P@ssw0rd*.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# useradd operator3
     [root@servera ~]# passwd operator3
@@ -77,23 +91,33 @@
     Retype new password: P@ssw0rd
     passwd: all authentication tokens updated successfully.
     ```
+    </details>
 
 6.	Обновите учетные записи пользователей *operator1* и *operator2*, добавив комментарии *Operator One* и *Operator Two* соответственно. Убедитесь, что комментарии успешно добавлены.
 
     6.1.	Выполните команду `usermod -c`, чтобы изменить комментарии для учетной записи пользователя *operator1*.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# usermod -c "Operator One" operator1
     ```
+    </details>
 
     6.2.	Выполните команду `usermod -c`, чтобы изменить комментарии для учетной записи пользователя *operator2*.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# usermod -c "Operator Two" operator2
     ```
+    </details>
+
 
     6.3.	Убедитесь, что комментарии для пользователей *operator1* и *operator2* отображаются в пользовательских записях.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# tail /etc/passwd
     ...output omitted...
@@ -101,17 +125,23 @@
     operator2:x:1003:1003:Operator Two:/home/operator2:/bin/bash
     operator3:x:1004:1004::/home/operator3:/bin/bash
     ```
+    </details>
 
 7.	Удалите пользователя *operator3* вместе со всеми его личными данными. Убедитесь, что пользователь успешно удален.
 
     7.1.	Удалите пользователя *operator3* из системы.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# userdel -r operator3
     ```
+    </details>
 
     7.2.	Убедитесь, что пользователь *operator3* успешно удален.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# tail /etc/passwd
     ...output omitted...
@@ -120,15 +150,18 @@
     ```
 
     Обратите внимание, что в предыдущем выводе нет информации об учетной записи пользователя *operator3*.
-
+    </details>
 
     7.3.	Закройте оболочку пользователя *root*, чтобы вернуться в оболочку пользователя *student*.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [root@servera ~]# exit
     logout
     [student@servera ~]$ 
     ```
+    </details>
 
     7.4.	Выйдите с **servera**.
 

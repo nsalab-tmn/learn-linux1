@@ -28,12 +28,17 @@
 
     1.2.	Используйте Vim для редактирования файла конфигурации **~/.bashrc**.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ vim ~/.bashrc
     ```
+    </details>
 
     1.3.	Добавьте переменную оболочки PS1 и ее значение в файл **~/.bashrc**. Не забудьте добавить пробел в конец задаваемого значения, а также заключить значение в кавычки целиком, включая конечный пробел.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     ...output omitted...
     # User specific environment and startup programs
@@ -41,9 +46,12 @@
     PS1='[\u@\h \t \w]$ '
     export PATH
     ```
+    </details>
 
     1.4.	Выйдите с servera и снова войдите с помощью команды `ssh` для обновления командной строки.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ exit
     logout
@@ -52,24 +60,33 @@
     ...output omitted...
     [student@servera 14:45:05 ~]$ 
     ```
+    </details>
 
 2.	Присвойте значение локальной переменной оболочки. Имена переменных могут содержать заглавные и строчные буквы, цифры и подчеркивания. Получите значение переменной.
 
     2.1.	Создайте новую переменную с именем file и значением *tmp.zdkei083*. Файл tmp.zdkei083 существует в домашнем каталоге пользователя student.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera 14:47:05 ~]$ file=tmp.zdkei083
     ```
+    </details>
 
     2.2.	Получите значение переменной file.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera 14:48:35 ~]$ echo $file
     tmp.zdkei083 
     ```
+    </details>
 
     2.3.	Используйте команду `ls -l` с именем переменной file для отображения файла **tmp.zdkei083**. Используйте команду `rm` с именем переменной file для удаления файла **tmp.zdkei083**. Убедитесь, что файл был удален.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera 14:59:07 ~]$ ls -l $file
     -rw-rw-r--. 1 student student 0 Jan 23 14:59 tmp.zdkei083
@@ -77,14 +94,18 @@
     [student@servera 14:59:15 ~]$ ls -l $file
     ls: cannot access 'tmp.zdkei083': No such file or directory 
     ```
+    </details>
 
 3.	Присвойте значение переменной editor. Используйте одну команду, чтобы сделать переменную переменной среды.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera 14:46:40 ~]$ export EDITOR=vim
     [student@servera 14:46:55 ~]$ echo $EDITOR
     vim 
     ```
+    </details>
 
 4.	Выйдите с **servera**.
 
