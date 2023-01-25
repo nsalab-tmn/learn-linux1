@@ -10,7 +10,7 @@
 
 Войдите на **workstation** как пользователь *student* с паролем *student*.
 
-На **workstation** запустите сценарий ё, чтобы начать упражнение. Этот сценарий создает необходимые учетные записи пользователей.
+На **workstation** запустите сценарий `lab ssh-configure start`, чтобы начать упражнение. Этот сценарий создает необходимые учетные записи пользователей.
 
 ```
 [student@workstation ~]$ lab ssh-configure start
@@ -24,16 +24,21 @@
   [student@serverb ~]$ 
   ```
 
-2.	Выполните команду `su`, чтобы переключиться на пользователя *operator1* на **serverb**. Используйте *redhat* в качестве пароля пользователя *operator1*.
+2.	Выполните команду, чтобы переключиться на пользователя *operator1* на **serverb**. Используйте *redhat* в качестве пароля пользователя *operator1*.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@serverb ~]$ su - operator1
   Password: redhat
   [operator1@serverb ~]$ 
   ```
+  </details>
 
 3.	Выполните команду `ssh-keygen`, чтобы создать ключи SSH. Не вводите парольную фразу.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [operator1@serverb ~]$ ssh-keygen
   Generating public/private rsa key pair.
@@ -58,9 +63,12 @@
   |o     o..        |
   +----[SHA256]-----+
   ```
+  </details>
 
 4.	Выполните команду `ssh-copy-id`, чтобы отправить открытый ключ из пары ключей SSH пользователю *operator1* на **servera**. Используйте *redhat* в качестве пароля пользователя *operator1* на **servera**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [operator1@serverb ~]$ ssh-copy-id operator1@servera
   /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/operator1/.ssh/id_rsa.pub"
@@ -75,13 +83,17 @@
   Now try logging into the machine, with:   "ssh 'operator1@servera'"
   and check to make sure that only the key(s) you wanted were added.
   ```
+  </details>
 
 5.	Удаленно выполните команду `hostname` на **servera** с использованием SSH, не обращаясь к удаленной интерактивной оболочке.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [operator1@serverb ~]$ ssh operator1@servera hostname
   servera.lab.example.com
   ```
+  </details>
 
   Обратите внимание, что предыдущая команда `ssh` не запрашивала пароль, поскольку она использовала не защищенный парольной фразой закрытый ключ с экспортированным открытым ключом, чтобы пройти аутентификацию на servera от имени пользователя *operator1*. Этот подход небезопасен, поскольку любой пользователь, имеющий доступ к файлу закрытого ключа, может войти на servera как пользователь *operator1*. Безопасной альтернативой является защита закрытого ключа парольной фразой. Это мы сделаем на следующем шаге.
 
@@ -93,6 +105,8 @@
   Если не указать файл, в котором должен быть сохранен ключ, будет использоваться файл по умолчанию (**/home/user/.ssh/id_rsa**). Вы уже использовали имя файла по умолчанию при создании ключей SSH на предыдущем шаге, поэтому важно указать нестандартный файл, в противном случае существующие ключи SSH будут перезаписаны.
   </details>
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [operator1@serverb ~]$ ssh-keygen -f .ssh/key2
   Generating public/private rsa key pair.
@@ -115,9 +129,12 @@
   |+ . =o.          |
   +----[SHA256]-----+
   ```
+  </details>
 
 6.	Выполните команду `ssh-copy-id`, чтобы отправить открытый ключ из пары ключей, защищенной парольной фразой, пользователю *operator1* на **servera**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [operator1@serverb ~]$ ssh-copy-id -i .ssh/key2.pub operator1@servera
   /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: ".ssh/key2.pub"
@@ -129,16 +146,20 @@
   Now try logging into the machine, with:   "ssh 'operator1@servera'"
   and check to make sure that only the key(s) you wanted were added.
   ```
+  </details>
 
   Обратите внимание, что предыдущая команда `ssh-copy-id` не запрашивала пароль, поскольку она использовала открытый ключ для закрытого ключа, не защищенного парольной фразой, который вы экспортировали на **servera** на предыдущем шаге.
 
 7.	Удаленно выполните команду `hostname` на **servera** с использованием SSH, не обращаясь к удаленной интерактивной оболочке. Используйте **/home/operator1/.ssh/key2** как файл идентификационных данных. Укажите *redhatpass* в качестве парольной фразы, которую вы настроили для закрытого ключа на предыдущем шаге.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [operator1@serverb ~]$ ssh -i .ssh/key2 operator1@servera hostname
   Enter passphrase for key '.ssh/key2': redhatpass
   servera.lab.example.com
   ```
+  </details>
 
   Обратите внимание, что предыдущая команда `ssh` запросила у вас парольную фразу, которую вы использовали для защиты закрытого ключа из пары ключей SSH. Эта парольная фраза защищает закрытый ключ. Если злоумышленник получит доступ к закрытому ключу, он не сможет использовать его для доступа к другим системам, поскольку сам закрытый ключ защищен парольной фразой. Команда `ssh` использует парольную фразу, отличную от парольной фразы пользователя *operator1* на **servera** , и пользователям необходимо знать обе.
 
@@ -146,6 +167,8 @@
 
 8.	Выполните команду `ssh-agent` в своей оболочке Bash и добавьте защищенный парольной фразой закрытый ключ (**/home/operator1/.ssh/key2**) из пары ключей SSH в сеанс оболочки.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [operator1@serverb ~]$ eval $(ssh-agent)
   Agent pid 21032
@@ -153,27 +176,37 @@
   Enter passphrase for .ssh/key2: redhatpass
   Identity added: .ssh/key2 (operator1@serverb.lab.example.com)
   ```
+  </details>
 
   Предыдущая команда `eval` запустила программу `ssh-agent` и настроила этот сеанс оболочки на ее использование. Затем вы использовали команду `ssh-add`, чтобы предоставить программе `ssh-agent` разблокированный закрытый ключ.
 
 9.	Удаленно выполните команду `hostname` на **servera**, не обращаясь к удаленной интерактивной оболочке. Используйте **/home/operator1/.ssh/key2** как файл идентификационных данных.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [operator1@serverb ~]$ ssh -i .ssh/key2 operator1@servera hostname
   servera.lab.example.com
   ```
+  </details>
 
   Обратите внимание, что предыдущая команда `ssh` не предложила ввести парольную фразу в интерактивном режиме.
 
 10.	Откройте еще один терминал на **workstation** и установите SSH-подключение к **serverb** как пользователь *student*.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@workstation ~]$ ssh student@serverb
   ...output omitted...
   [student@serverb ~]$ 
   ```
+  </details>
 
-11.	На **serverb** с помощью команды `su` переключитесь на пользователя *operator1* и установите SSH-подключение к **servera**. Используйте **/home/operator1/.ssh/key2** в качестве файла идентификационных данных для прохождения аутентификации с использованием ключей SSH.
+11.	На **serverb** переключитесь на пользователя *operator1* и установите SSH-подключение к **servera**. Используйте **/home/operator1/.ssh/key2** в качестве файла идентификационных данных для прохождения аутентификации с использованием ключей SSH.
+
+  <details>
+  <summary>Показать решение</summary>
 
   11.1.	Выполните команду `su`, чтобы переключиться на пользователя *operator1*. Используйте *redhat* в качестве пароля пользователя *operator1*.
 
@@ -193,6 +226,7 @@
   ```
 
   Обратите внимание, что предыдущая команда `ssh` запросила интерактивный ввод парольной фразы, поскольку вы попытались установить SSH-подключение не из оболочки, которую использовали для запуска `ssh-agent`.
+  </details>
 
 12.	Выйдите из всех оболочек, используемых на втором терминале.
 

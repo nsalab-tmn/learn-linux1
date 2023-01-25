@@ -26,6 +26,8 @@
 
 2.	Используйте сопоставление **_PID=1** с командой `journalctl`, чтобы отобразить все события журнала, источником которых является процесс **systemd**, работающий на **servera** с идентификатором процесса 1. Нажмите **q**, чтобы выйти из команды `journalctl`.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ journalctl _PID=1
   ...output omitted...
@@ -37,14 +39,13 @@
   [student@servera ~]$ 
   ```
 
-  <details>
-  <summary>Примечание</summary>
-
   В вашей системе вывод команды journalctl может быть другим.
   </details>
 
 3.	Используйте сопоставление **_UID=81** с командой `journalctl`, чтобы отобразить все события журнала, источником которых является системная служба, запущенная на **servera** с идентификатором пользователя 81. Нажмите **q**, чтобы выйти из команды `journalctl`.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ journalctl _UID=81
   ...output omitted...
@@ -53,9 +54,12 @@
   lines 1-5/5 (END) q
   [student@servera ~]$ 
   ```
+  </details>
 
 4.	Используйте опцию `-p warning` с командой `journalctl`, чтобы отобразить события журнала с приоритетом **warning** и выше на **servera**. Нажмите **q**, чтобы выйти из команды `journalctl`.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ journalctl -p warning
   ...output omitted...
@@ -73,8 +77,12 @@
   lines 1-17/17 (END) q
   [student@servera ~]$ 
   ```
+  </details>
 
 5.	Отобразите все события журнала, записанные на **servera** в течение последних 10 минут.
+
+  <details>
+  <summary>Показать решение</summary>
 
   Используйте опцию `--since` с командой `journalctl`, чтобы отобразить все события журнала, записанные на **servera** в течение последних 10 минут. Нажмите **q**, чтобы выйти из команды `journalctl`.
 
@@ -96,6 +104,7 @@
   lines 1-32/84 39% q
   [student@servera ~]$
   ```
+  </details>
 
 6.	Используйте опцию `--since` и сопоставление `_SYSTEMD_UNIT="sshd.service"` с командой `journalctl`, чтобы отобразить все события журнала, источником которых является служба **sshd** и которые были записаны сегодня после **09:00:00** на **servera**. Нажмите **q**, чтобы выйти из команды `journalctl`.
 
@@ -105,6 +114,8 @@
   Ваш часовой пояс может отличаться от часового пояса учебной аудитории. Проверьте время на машине **servera** и при необходимости измените значение опции `--since` соответствующим образом.
   </details>
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ journalctl --since 9:00:00 _SYSTEMD_UNIT="sshd.service"
   ...output omitted...
@@ -127,6 +138,7 @@
   lines 1-32 q
   [student@servera ~]$ 
   ```
+  </details>
 
 7.	Выйдите с **servera**.
 

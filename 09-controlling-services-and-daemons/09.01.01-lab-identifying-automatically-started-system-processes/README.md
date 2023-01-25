@@ -26,6 +26,8 @@
 
 2.	Отобразите список всех юнитов служб, установленных на **servera**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ systemctl list-units --type=service
   UNIT                 LOAD   ACTIVE SUB     DESCRIPTION
@@ -38,10 +40,13 @@
   ```
 
   Нажмите q, чтобы выйти из команды.
+  </details>
 
 
 3.	Отобразите список всех юнитов сокетов (активных и неактивных) на **servera**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ systemctl list-units --type=socket --all
   UNIT                 LOAD   ACTIVE   SUB       DESCRIPTION
@@ -59,11 +64,14 @@
   12 loaded units listed.
   To show all installed unit files use 'systemctl list-unit-files'.
   ```
+  </details>
 
 4.	Проверьте состояние службы **chronyd**. Эта служба используется для сетевой синхронизации времени (NTP).
 
   4.1.	Отобразите состояние службы chronyd. Обратите внимание на идентификатор процесса любого активного демона.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ systemctl status chronyd
   ● chronyd.service - NTP client/server
@@ -88,33 +96,45 @@
   ```
 
   Нажмите q, чтобы выйти из команды.
+  </details>
 
   4.2.	Убедитесь, что указанный демон работает. В приведенном выше выводе идентификатор процесса, связанного с **chronyd**, ― 680. В вашей системе этот идентификатор может быть другим.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ ps -p 680
     PID TTY          TIME CMD
     680 ?        00:00:00 chronyd
   ```
+  </details>
 
 5.	Проверьте состояние службы **sshd**. Эта служба используется для установки безопасного шифрованного подключения между системами.
 
   5.1.	Определите, включена ли служба **sshd** для запуска во время начальной загрузки системы.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ systemctl is-enabled sshd
   enabled
   ```
+  </details>
 
   5.2.	Определите, является ли служба **sshd** активной, не отображая всю информацию о ее состоянии.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ systemctl is-active sshd
   active
   ```
+  </details>
 
   5.3.	Отобразите состояние службы **sshd**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ systemctl status sshd
   ● sshd.service - OpenSSH server daemon
@@ -140,9 +160,12 @@
   ```
 
   Нажмите q, чтобы выйти из команды.
+  </details>
 
 6.	Отобразите список состояний всех юнитов служб (включенных и отключенных).
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ systemctl list-unit-files --type=service
   UNIT FILE                    STATE          
@@ -159,6 +182,7 @@
   ```
 
   Нажмите q, чтобы выйти из команды.
+  </details>
 
 7.	Выйдите с **servera**.
 

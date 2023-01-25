@@ -58,23 +58,30 @@
 
 4.	Выйдите из командной оболочки пользователя *student* на **serverb**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@serverb ~]$ exit
   logout
   Connection to serverb closed.
   [student@servera ~]$ 
   ```
+  </details>
 
 5.	Установите SSH-подключение к **serverb** как пользователь *root*. Используйте *redhat* в качестве пароля пользователя *root*.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ ssh root@serverb
   root@serverb's password: redhat
   ...output omitted...
   [root@serverb ~]# 
   ```
+  </details>
 
   Обратите внимание, что предыдущая команда `ssh` не просила принять ключ хоста, поскольку он был найден среди известных хостов. Если идентификационные данные serverb изменятся, OpenSSH предложит проверить и принять новый ключ хоста.
+  
 
 6.	Выполните команду `w`, чтобы отобразить пользователей, вошедших в систему **serverb**.
 
@@ -89,18 +96,24 @@
 
 7.	Выйдите из командной оболочки пользователя *root* на **serverb**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [root@serverb ~]# exit
   logout
   Connection to serverb closed.
   [student@servera ~]$ 
   ```
+  </details>
 
 8.	Удалите файл **/home/student/.ssh/known_hosts** с **servera**. Это приведет к тому, что **ssh** потеряет записанные идентификационные данные удаленных систем.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ rm /home/student/.ssh/known_hosts
   ```
+  </details>
 
   Ключи хоста могут меняться по обоснованным причинам, например, если удаленный компьютер был заменен из-за аппаратного сбоя или удаленный компьютер был переустановлен. Обычно рекомендуется удалять только запись ключа определенного хоста в файле **known_hosts**. Поскольку этот конкретный файл **known_hosts** имеет только одну запись, вы можете удалить весь файл.
 
@@ -121,6 +134,8 @@
 
 10.	Выйдите из командной оболочки пользователя *student* на **serverb** и убедитесь, что новый экземпляр **known_hosts** существует на **servera**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@serverb ~]$ exit
   logout
@@ -128,18 +143,24 @@
   [student@servera ~]$ ls -l /home/student/.ssh/known_hosts
   -rw-r--r--. 1 student student 183 Feb  1 20:26 /home/student/.ssh/known_hosts
   ```
+  </details>
 
 11.	Убедитесь, что в новом экземпляре файла **known_hosts** есть ключ хоста **serverb**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ cat /home/student/.ssh/known_hosts
   serverb,172.25.250.11 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBI9LEYEhwmU1rNqnbBPukH2Ba0/QBAu9WbS4m03B3MIhhXWKFFNa/UlNjY8NDpEM+hkJe/GmnkcEYMLbCfd9nMA=
   ```
 
   Фактический вывод может отличаться.
+  </details>
 
 12.	Удаленно выполните команду `hostname` на **serverb**, не обращаясь к интерактивной оболочке.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ ssh student@serverb hostname
   student@serverb's password: student
@@ -147,6 +168,7 @@
   ```
 
   Предыдущая команда отображала полное имя хоста удаленной системы **serverb**.
+  </details>
 
 13.	Выйдите из командной оболочки пользователя *student* на **servera**.
 

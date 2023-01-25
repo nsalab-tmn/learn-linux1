@@ -28,11 +28,14 @@
 
   2.1.	Выполните команду `sudo -i`, чтобы переключиться на пользователя root. Укажите *student* в качестве пароля для пользователя *student*, если вам будет предложено его ввести при выполнении команды `sudo -i`.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ sudo -i
   [sudo] password for student: student
   [root@servera ~]# 
   ```
+  </details>
 
   2.2.	Создайте файл **/etc/rsyslog.d/debug.conf** с необходимыми записями, чтобы перенаправлять все сообщения журнала с приоритетом debug в файл **/var/log/messages-debug**. Используйте команду `vim /etc/rsyslog.d/debug.conf`, чтобы создать файл со следующим содержимым.
 
@@ -44,17 +47,23 @@
 
   2.3.	Перезапустите службу rsyslog.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [root@servera ~]# systemctl restart rsyslog
   ```
+  </details>
 
 3.	Убедитесь, что все сообщения журнала с приоритетом debug отображаются в файле **/var/log/messages-debug**.
 
   3.1.	Выполните команду `logger` с опцией `-p`, чтобы создать сообщение журнала с источником **user** и приоритетом **debug**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [root@servera ~]# logger -p user.debug "Debug Message Test"
   ```
+  </details>
 
   3.2.	Выполните команду `tail`, чтобы просмотреть последние 10 сообщений журнала из файла **/var/log/messages-debug**, и убедитесь, что среди них есть сообщение *Debug Message Test*.
 

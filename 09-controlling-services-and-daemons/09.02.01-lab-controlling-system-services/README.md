@@ -28,6 +28,8 @@
 
   2.1.	Отобразите состояние службы **sshd**. Обратите внимание на идентификатор процесса демона **sshd**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ systemctl status sshd
   ● sshd.service - OpenSSH server daemon
@@ -42,9 +44,12 @@
   ```
 
   Нажмите q, чтобы выйти из команды.
+  </details>
 
   2.2.	Перезапустите службу **sshd** и посмотрите ее состояние. Идентификатор процесса демона должен измениться.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ sudo systemctl restart sshd
   [sudo] password for student: student
@@ -61,9 +66,12 @@
   ```
 
   Обратите внимание, что в приведенном выше выводе идентификатор процесса изменился с 759 на 1132 (в вашей системе значения, скорее всего, будут другими). Нажмите q, чтобы выйти из команды.
+  </details>
 
   2.3.	Перезагрузите службу **sshd** и просмотрите ее состояние. Идентификатор процесса демона не должен измениться, и подключения не должны прерваться.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ sudo systemctl reload sshd
   [student@servera ~]$ systemctl status sshd
@@ -79,9 +87,12 @@
   ```
 
   Нажмите q, чтобы выйти из команды.
+  </details>
 
 3.	Убедитесь, что служба **chronyd** запущена.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ systemctl status chronyd
   ● chronyd.service - NTP client/server
@@ -91,9 +102,12 @@
   ```
 
   Нажмите q, чтобы выйти из команды.
+  </details>
 
 4.	Остановите службу **chronyd** и просмотрите ее состояние.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ sudo systemctl stop chronyd
   [student@servera ~]$ systemctl status chronyd
@@ -107,26 +121,35 @@
   ```
 
   Нажмите q, чтобы выйти из команды.
+  </details>
 
 5.	Определите, включена ли служба **chronyd** для запуска во время начальной загрузки системы.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@server ~]$ systemctl is-enabled chronyd
   enabled
   ```
+  </details>
 
 6.	Перезагрузите **servera** и просмотрите состояние службы **chronyd**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ sudo systemctl reboot
   Connection to servera closed by remote host.
   Connection to servera closed.
   [student@workstation ~]$ 
   ```
+  </details>
 
 
   Войдите на **servera** как пользователь *student* и просмотрите состояние службы **chronyd**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@workstation ~]$ ssh student@servera
   ...output omitted...
@@ -138,9 +161,12 @@
   ```
 
   Нажмите q, чтобы выйти из команды.
+  </details>
 
 7.	Отключите службу **chronyd**, чтобы она не запускалась во время начальной загрузки системы, а затем просмотрите ее состояние.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ sudo systemctl disable chronyd
   [sudo] password for student: student
@@ -153,18 +179,24 @@
   ```
 
   Нажмите q, чтобы выйти из команды.
+  </details>
 
 8.	Перезагрузите **servera** и просмотрите состояние службы **chronyd**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@servera ~]$ sudo systemctl reboot
   Connection to servera closed by remote host.
   Connection to servera closed.
   [student@workstation ~]$ 
   ```
+  </details>
 
   Войдите на **servera** как пользователь *student* и просмотрите состояние службы **chronyd**.
 
+  <details>
+  <summary>Показать решение</summary>
   ```
   [student@workstation ~]$ ssh student@servera
   ...output omitted...
@@ -175,6 +207,7 @@
     Docs: man:chronyd(8)
           man:chrony.conf(5)
   ```
+  </details>
 
 9.	Выйдите с **servera**.
 

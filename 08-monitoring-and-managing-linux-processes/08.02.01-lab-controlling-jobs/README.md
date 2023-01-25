@@ -28,9 +28,12 @@
 
     2.1.	С помощью команды `mkdir` создайте новый каталог с именем **/home/student/bin**.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ mkdir /home/student/bin
     ```
+    </details>
 
     2.2.	С помощью команды `vim` создайте сценарий с именем **control** в каталоге **/home/student/bin**. Чтобы перейти в интерактивный режим Vim, нажмите клавишу **i**. Выполните команду `:wq`, чтобы сохранить файл.
 
@@ -43,37 +46,40 @@
     done 
     ```
 
-    <details>
-    <summary>Примечание</summary>
-
     Сценарий control работает до тех пор, пока не будет завершен. Он добавляет аргументы командной строки в файл **~/control_outfile** один раз в секунду.
-    </details>
 
     2.3.	Используйте команду `chmod`, чтобы сделать файл **control** исполняемым.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ chmod +x /home/student/bin/control
     ```
+    </details>
 
 3.	Запустите сценарий **control** с аргументом `technical`. Сценарий непрерывно добавляет слово «technical» и пробел в файл **~/control_outfile** с интервалом в одну секунду.
 
     <details>
-    <summary>Примечание</summary>
+    <summary>Показать решение</summary>
 
     Вы можете выполнить сценарий control, поскольку он находится в вашем PATH и сделан исполняемым.
-    </details>
+    
 
     ```
     [student@servera ~]$ control technical 
     ```
+    </details>
 
 4.	В командной оболочке правого терминала выполните команду `tail` с опцией `-f`, чтобы убедиться, что новый процесс производит запись в файл **/home/student/control_outfile**.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ tail -f ~/control_outfile
     technical technical technical technical
     ...output omitted... 
     ```
+    </details>
 
 5.	В командной оболочке левого терминала нажмите **Ctrl+z**, чтобы приостановить запущенный процесс. При этом командная оболочка вернет идентификатор задания в квадратных скобках. В правом окне убедитесь, что вывод данных процесса прекратился.
 
@@ -89,24 +95,33 @@
 
     6.1.	С помощью команды `jobs` отобразите список заданий.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ jobs
     [1]+  Stopped                 control technical 
     ```
+    </details>
 
     6.2.	Выполните команду `bg`, чтобы запустить задание `control` в фоновом режиме.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ bg
     [1]+ control technical & 
     ```
+    </details>
 
     6.3.	С помощью команды `jobs` убедитесь, что задание `control` снова выполняется.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ jobs
     [1]+  Running                 control technical & 
     ```
+    </details>
 
     6.4.	В командной оболочке правого терминала убедитесь, что команда `tail` выводит данные.
 
@@ -117,6 +132,8 @@
 
 7.	В командной оболочке левого терминала запустите еще два процесса `control` для добавления вывода в файл **~/output**. Используйте амперсанд (**&**), чтобы запустить процессы в фоновом режиме. Замените **technical** на **documents**, а затем на **database**. Замена аргументов помогает различить эти три процесса.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ control documents &
     [2] 6579
@@ -125,27 +142,29 @@
     [3] 6654 
     ```
 
-    <details>
-    <summary>Примечание</summary>
-
     Номер задания каждого нового процесса указывается в квадратных скобках. Второй номер ― это уникальный системный идентификационный номер процесса (PID).
     </details>
 
 8.	В командной оболочке левого терминала выполните команду `jobs`, чтобы отобразить три запущенных процесса. В командной оболочке левого терминала убедитесь, что все три процесса добавляют вывод в файл.
 
-```
-[student@servera ~]$ jobs
-[1]   Running                 control technical &
-[2]-  Running                 control documents &
-[3]+  Running                 control database &
-...output omitted...
-technical documents database technical documents database technical documents database technical documents database
-```
+    <details>
+    <summary>Показать решение</summary>
+    ```
+    [student@servera ~]$ jobs
+    [1]   Running                 control technical &
+    [2]-  Running                 control documents &
+    [3]+  Running                 control database &
+    ...output omitted...
+    technical documents database technical documents database technical documents database technical documents database
+    ```
+    </details>
 
 9.	Приостановите процесс `control technical`. Убедитесь, что он был приостановлен. Завершите процесс `control documents` и убедитесь, что он прекращен.
 
     9.1.	В командной оболочке левого терминала выполните команду `fg` с идентификатором задания, чтобы перевести процесс `control technical` в активный режим. Нажмите **Ctrl+z**, чтобы приостановить процесс. Выполните команду `jobs`, чтобы убедиться, что процесс приостановлен.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ fg %1
     control technical
@@ -156,6 +175,7 @@ technical documents database technical documents database technical documents da
     [2]   Running                 control documents &
     [3]-  Running                 control database &
     ```
+    </details>
 
     9.2.	В командной оболочке правого терминала убедитесь, что процесс `control technical` больше не выводит данные.
 
@@ -166,6 +186,8 @@ technical documents database technical documents database technical documents da
 
     9.3.	В командной оболочке левого терминала выполните команду `fg` с идентификатором задания, чтобы перевести процесс `control documents` в активный режим. Нажмите **Ctrl+c**, чтобы завершить процесс. Выполните команду `jobs`, чтобы убедиться, что процесс завершен.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ fg %2
     control documents
@@ -174,6 +196,7 @@ technical documents database technical documents database technical documents da
     [1]+  Stopped                 control technical
     [3]-  Running                 control database &
     ```
+    </details>
 
     9.4.	В командной оболочке правого терминала убедитесь, что процесс `control documents` больше не выводит данные.
 
@@ -185,6 +208,8 @@ technical documents database technical documents database technical documents da
 
 10.	В левом окне выполните команду `ps` с опцией `jT` для отображения оставшихся заданий. Приостановленные задания имеют состояние **T**. Другие фоновые задания находятся в состоянии сна (**S**).
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ ps jT
     PPID   PID  PGID   SID TTY      TPGID STAT   UID   TIME COMMAND
@@ -195,9 +220,12 @@ technical documents database technical documents database technical documents da
     28251 28701 28251 27278 pts/1    28702 S     1000   0:00 sleep 1
     27278 28702 28702 27278 pts/1    28702 R+    1000   0:00 ps jT
     ```
+    </details>
 
 11.	В левом окне выполните команду `jobs` для отображения текущих заданий. Завершите процесс `control database` и убедитесь, что он прекращен.
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     [student@servera ~]$ jobs
     [1]+  Stopped                 control technical
@@ -213,14 +241,18 @@ technical documents database technical documents database technical documents da
     [student@servera ~]$ jobs
     [1]+  Stopped                 control technical
     ```
+    </details>
 
 12.	В командной оболочке правого терминала нажмите **Ctrl+c**, чтобы остановить команду `tail`. С помощью команды `rm` удалите файл **~/control_outfile.**
 
+    <details>
+    <summary>Показать решение</summary>
     ```
     ...output omitted...
     Ctrl+c
     [student@servera ~]$ rm ~/control_outfile
     ```
+    </details>
 
 13.	Выйдите с хоста **servera** на обоих терминалах.
 
