@@ -1,0 +1,149 @@
+{
+  "title": "Тест на понимание темы: Перенаправление вывода в файл или программу",
+  "materialType": "test",
+  "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+  "difficulty": 1,
+  "duration": "PT0H30M",
+  "tags": {
+    "$ref": "../../material-tags.json"
+  },
+  "skills": {},
+  "passingScore": 100,
+  "assets": {
+    "$ref": "./assets"
+  },
+  "questions": [
+    {
+      "question": "Просмотрите следующую информацию и используйте ее, чтобы ответить на вопросы викторины.\\nВ системе есть четыре пользователя, распределенных по следующим группам:\\n- Пользователь consultant1 состоит в группах consultant1 и database1\\n- Пользователь operator1 состоит в группах operator1 и database1\\n- Пользователь contractor1 состоит в группах contractor1 и contractor3\\n- Пользователь operator2 состоит в группах operator2 и contractor3\\nТекущий каталог (.) содержит четыре файла со следующей информацией о правах доступа:\\n\\ndrwxrwxr-x. operator1 database1 .\\n-rw-rw-r--. consultant1 consultant1 lfile1\\n-rw-r--rw-. consultant1 database1 lfile2\\n-rw-rw-r--. operator1 database1 rfile1\\n-rw-r-----. operator1 database1 rfile2\\n\\nКакой обычный файл принадлежит operator1 и доступен для чтения всем пользователям?\n",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "lfile1",
+          "correct": false
+        },
+        {
+          "answer": "lfile2",
+          "correct": false
+        },
+        {
+          "answer": "rfile1",
+          "correct": true
+        },
+        {
+          "answer": "rfile2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Просмотрите следующую информацию и используйте ее, чтобы ответить на вопросы викторины.\\nВ системе есть четыре пользователя, распределенных по следующим группам:\\n- Пользователь consultant1 состоит в группах consultant1 и database1\\n- Пользователь operator1 состоит в группах operator1 и database1\\n- Пользователь contractor1 состоит в группах contractor1 и contractor3\\n- Пользователь operator2 состоит в группах operator2 и contractor3\\nТекущий каталог (.) содержит четыре файла со следующей информацией о правах доступа:\\n\\ndrwxrwxr-x. operator1 database1 .\\n-rw-rw-r--. consultant1 consultant1 lfile1\\n-rw-r--rw-. consultant1 database1 lfile2\\n-rw-rw-r--. operator1 database1 rfile1\\n-rw-r-----. operator1 database1 rfile2\\n\\nКакой файл может быть изменен пользователем сontract1?\n",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "lfile1",
+          "correct": false
+        },
+        {
+          "answer": "lfile2",
+          "correct": true
+        },
+        {
+          "answer": "rfile1",
+          "correct": false
+        },
+        {
+          "answer": "rfile2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Просмотрите следующую информацию и используйте ее, чтобы ответить на вопросы викторины.\\nВ системе есть четыре пользователя, распределенных по следующим группам:\\n- Пользователь consultant1 состоит в группах consultant1 и database1\\n- Пользователь operator1 состоит в группах operator1 и database1\\n- Пользователь contractor1 состоит в группах contractor1 и contractor3\\n- Пользователь operator2 состоит в группах operator2 и contractor3\\nТекущий каталог (.) содержит четыре файла со следующей информацией о правах доступа:\\n\\ndrwxrwxr-x. operator1 database1 .\\n-rw-rw-r--. consultant1 consultant1 lfile1\\n-rw-r--rw-. consultant1 database1 lfile2\\n-rw-rw-r--. operator1 database1 rfile1\\n-rw-r-----. operator1 database1 rfile2\\n\\nКакой файл не может быть прочитан пользователем operator2?\n",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "lfile1",
+          "correct": false
+        },
+        {
+          "answer": "lfile2",
+          "correct": false
+        },
+        {
+          "answer": "rfile1",
+          "correct": false
+        },
+        {
+          "answer": "rfile2",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Просмотрите следующую информацию и используйте ее, чтобы ответить на вопросы викторины.\\nВ системе есть четыре пользователя, распределенных по следующим группам:\\n- Пользователь consultant1 состоит в группах consultant1 и database1\\n- Пользователь operator1 состоит в группах operator1 и database1\\n- Пользователь contractor1 состоит в группах contractor1 и contractor3\\n- Пользователь operator2 состоит в группах operator2 и contractor3\\nТекущий каталог (.) содержит четыре файла со следующей информацией о правах доступа:\\n\\ndrwxrwxr-x. operator1 database1 .\\n-rw-rw-r--. consultant1 consultant1 lfile1\\n-rw-r--rw-. consultant1 database1 lfile2\\n-rw-rw-r--. operator1 database1 rfile1\\n-rw-r-----. operator1 database1 rfile2\\n\\nКакой файл принадлежит группе consultant1?\n",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "lfile1",
+          "correct": true
+        },
+        {
+          "answer": "lfile2",
+          "correct": false
+        },
+        {
+          "answer": "rfile1",
+          "correct": false
+        },
+        {
+          "answer": "rfile2",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Просмотрите следующую информацию и используйте ее, чтобы ответить на вопросы викторины.\\nВ системе есть четыре пользователя, распределенных по следующим группам:\\n- Пользователь consultant1 состоит в группах consultant1 и database1\\n- Пользователь operator1 состоит в группах operator1 и database1\\n- Пользователь contractor1 состоит в группах contractor1 и contractor3\\n- Пользователь operator2 состоит в группах operator2 и contractor3\\nТекущий каталог (.) содержит четыре файла со следующей информацией о правах доступа:\\n\\ndrwxrwxr-x. operator1 database1 .\\n-rw-rw-r--. consultant1 consultant1 lfile1\\n-rw-r--rw-. consultant1 database1 lfile2\\n-rw-rw-r--. operator1 database1 rfile1\\n-rw-r-----. operator1 database1 rfile2\\n\\nКакие файлы может удалить пользователь operator1?\n",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "rfile1",
+          "correct": false
+        },
+        {
+          "answer": "rfile2",
+          "correct": false
+        },
+        {
+          "answer": "Все вышеперечисленное.",
+          "correct": true
+        },
+        {
+          "answer": "Ни один из вышеперечисленных.",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Просмотрите следующую информацию и используйте ее, чтобы ответить на вопросы викторины.\\nВ системе есть четыре пользователя, распределенных по следующим группам:\\n- Пользователь consultant1 состоит в группах consultant1 и database1\\n- Пользователь operator1 состоит в группах operator1 и database1\\n- Пользователь contractor1 состоит в группах contractor1 и contractor3\\n- Пользователь operator2 состоит в группах operator2 и contractor3\\nТекущий каталог (.) содержит четыре файла со следующей информацией о правах доступа:\\n\\ndrwxrwxr-x. operator1 database1 .\\n-rw-rw-r--. consultant1 consultant1 lfile1\\n-rw-r--rw-. consultant1 database1 lfile2\\n-rw-rw-r--. operator1 database1 rfile1\\n-rw-r-----. operator1 database1 rfile2\\n\\nКакие файлы может удалить пользователь operator2?\n",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "lfile1",
+          "correct": false
+        },
+        {
+          "answer": "lfile2",
+          "correct": false
+        },
+        {
+          "answer": "Все вышеперечисленное.",
+          "correct": false
+        },
+        {
+          "answer": "Ни один из вышеперечисленных.",
+          "correct": true
+        }
+      ]
+    }
+  ]
+}

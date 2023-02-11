@@ -1,0 +1,121 @@
+{
+    "title": "Тест на понимание темы: Отображение списка процессов",
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H30M",
+    "tags": {
+      "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 100,
+    "assets": {
+      "$ref": "./assets"
+    },
+    "questions": [
+      {
+        "question": "Какое состояние представляет процесс, который был остановлен или приостановлен?",
+        "answerType": "singleChoice",
+        "answers": [
+          {
+            "answer": "D",
+            "correct": false
+          },
+          {
+            "answer": "R",
+            "correct": false
+          },
+          {
+            "answer": "S",
+            "correct": false
+          },
+          {
+            "answer": "T",
+            "correct": true
+          },
+          {
+            "answer": "Z",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Какое состояние представляет собой процесс, который освободил все свои ресурсы, кроме своего PID?",
+        "answerType": "singleChoice",
+        "answers": [
+          {
+            "answer": "D",
+            "correct": false
+          },
+          {
+            "answer": "R",
+            "correct": false
+          },
+          {
+            "answer": "S",
+            "correct": false
+          },
+          {
+            "answer": "T",
+            "correct": false
+          },
+          {
+            "answer": "Z",
+            "correct": true
+          }
+        ]
+      },
+      {
+        "question": "Какой процесс родитель использует для дублирования для создания нового дочернего процесса?",
+        "answerType": "singleChoice",
+        "answers": [
+          {
+            "answer": "exec",
+            "correct": false
+          },
+          {
+            "answer": "fork",
+            "correct": true
+          },
+          {
+            "answer": "zombie",
+            "correct": false
+          },
+          {
+            "answer": "syscall",
+            "correct": false
+          },
+          {
+            "answer": "reap",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Какое состояние представляет собой процесс, который находится в спящем режиме до тех пор, пока не будет выполнено какое-либо условие?",
+        "answerType": "singleChoice",
+        "answers": [
+          {
+            "answer": "D",
+            "correct": false
+          },
+          {
+            "answer": "R",
+            "correct": false
+          },
+          {
+            "answer": "S",
+            "correct": true
+          },
+          {
+            "answer": "T",
+            "correct": false
+          },
+          {
+            "answer": "Z",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  }

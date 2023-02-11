@@ -1,0 +1,193 @@
+{
+  "title": "Тест на понимание темы: Описание концепций сетей",
+  "materialType": "test",
+  "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+  "difficulty": 1,
+  "duration": "PT0H30M",
+  "tags": {
+    "$ref": "../../material-tags.json"
+  },
+  "skills": {},
+  "passingScore": 100,
+  "assets": {
+    "$ref": "./assets"
+  },
+  "questions": [
+    {
+      "question": "Какую размерность, в битах, имеет IPv4-адрес?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "4",
+          "correct": false
+        },
+        {
+          "answer": "8",
+          "correct": false
+        },
+        {
+          "answer": "16",
+          "correct": false
+        },
+        {
+          "answer": "32",
+          "correct": true
+        },
+        {
+          "answer": "64",
+          "correct": false
+        },
+        {
+          "answer": "128",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Какой термин определяет, сколько начальных битов в IP-адресе составляют его сетевой адрес?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "netscope",
+          "correct": false
+        },
+        {
+          "answer": "netmask",
+          "correct": true
+        },
+        {
+          "answer": "subnet",
+          "correct": false
+        },
+        {
+          "answer": "multicast",
+          "correct": false
+        },
+        {
+          "answer": "netaddr",
+          "correct": false
+        },
+        {
+          "answer": "network",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Какой адрес представляет действительный хостовый IPv4-адрес?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "192.168.1.188",
+          "correct": true
+        },
+        {
+          "answer": "192.168.1.0",
+          "correct": false
+        },
+        {
+          "answer": "192.168.1.255",
+          "correct": false
+        },
+        {
+          "answer": "192.168.1.256",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Какую размерность, в битах, имеет IPv6-адрес?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "4",
+          "correct": false
+        },
+        {
+          "answer": "8",
+          "correct": false
+        },
+        {
+          "answer": "16",
+          "correct": false
+        },
+        {
+          "answer": "32",
+          "correct": false
+        },
+        {
+          "answer": "64",
+          "correct": false
+        },
+        {
+          "answer": "128",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Какой адрес не является действительным адресом IPv6?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "2000:0000:0000:0000:0000:0000:0000:0001",
+          "correct": false
+        },
+        {
+          "answer": "2::1",
+          "correct": false
+        },
+        {
+          "answer": "::",
+          "correct": false
+        },
+        {
+          "answer": "ff02::1:0:0",
+          "correct": false
+        },
+        {
+          "answer": "2001:3::7:0:2",
+          "correct": false
+        },
+        {
+          "answer": "2001:db8::7::2",
+          "correct": true
+        },
+        {
+          "answer": "2000::1",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Какой термин описывает специальный IP-адрес, который позволяет одной системе отправлять трафик, который получают несколько систем?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "netscope",
+          "correct": false
+        },
+        {
+          "answer": "netmask",
+          "correct": false
+        },
+        {
+          "answer": "subnet",
+          "correct": false
+        },
+        {
+          "answer": "multicast",
+          "correct": true
+        },
+        {
+          "answer": "netaddr",
+          "correct": false
+        },
+        {
+          "answer": "network",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

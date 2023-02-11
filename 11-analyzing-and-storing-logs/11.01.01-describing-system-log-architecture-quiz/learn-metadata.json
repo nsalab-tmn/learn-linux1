@@ -1,0 +1,171 @@
+{
+  "title": "Тест на понимание темы: Описание архитектуры системных log-файлов",
+  "materialType": "test",
+  "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+  "difficulty": 1,
+  "duration": "PT0H30M",
+  "tags": {
+    "$ref": "../../material-tags.json"
+  },
+  "skills": {},
+  "passingScore": 100,
+  "assets": {
+    "$ref": "./assets"
+  },
+  "questions": [
+    {
+      "question": "В каком из файлов сохраняется большая часть сообщений системного журнала, за исключением тех, которые связаны с проверкой подлинности, почтой, запланированными заданиями и отладкой?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "/var/log/maillog",
+          "correct": false
+        },
+        {
+          "answer": "/var/log/boot.log",
+          "correct": false
+        },
+        {
+          "answer": "/var/log/messages",
+          "correct": true
+        },
+        {
+          "answer": "/var/log/secure",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "В каком файле журнала хранятся сообщения системного журнала, связанные с операциями безопасности и аутентификации в системе?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "/var/log/maillog",
+          "correct": false
+        },
+        {
+          "answer": "/var/log/boot.log",
+          "correct": false
+        },
+        {
+          "answer": "/var/log/messages",
+          "correct": false
+        },
+        {
+          "answer": "/var/log/secure",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Какая служба сортирует и упорядочивает сообщения системного журнала в файлы в /var/log?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "rsyslog",
+          "correct": true
+        },
+        {
+          "answer": "systemd-journald",
+          "correct": false
+        },
+        {
+          "answer": "auditd",
+          "correct": false
+        },
+        {
+          "answer": "tuned",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "В каком каталоге размещаются удобочитаемые файлы системного журнала?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "/sys/kernel/debug",
+          "correct": false
+        },
+        {
+          "answer": "/var/log/journal",
+          "correct": false
+        },
+        {
+          "answer": "/run/log/journal",
+          "correct": false
+        },
+        {
+          "answer": "/var/log",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "В каком файле хранятся сообщения системного журнала, относящиеся к почтовому серверу?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "/var/log/lastlog",
+          "correct": false
+        },
+        {
+          "answer": "/var/log/maillog",
+          "correct": true
+        },
+        {
+          "answer": "/var/log/tallylog",
+          "correct": false
+        },
+        {
+          "answer": "/var/log/boot.log",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "В каком файле хранятся сообщения системного журнала, относящиеся к запланированным заданиям?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "/var/log/cron",
+          "correct": true
+        },
+        {
+          "answer": "/var/log/tallylog",
+          "correct": false
+        },
+        {
+          "answer": "/var/log/spooler",
+          "correct": false
+        },
+        {
+          "answer": "/var/log/secure",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "В каком файле хранятся консольные сообщения, связанные с запуском системы?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "/var/log/messages",
+          "correct": false
+        },
+        {
+          "answer": "/var/log/cron",
+          "correct": false
+        },
+        {
+          "answer": "/var/log/boot.log",
+          "correct": true
+        },
+        {
+          "answer": "/var/log/secure",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

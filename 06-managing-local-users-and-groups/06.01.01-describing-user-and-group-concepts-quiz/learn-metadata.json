@@ -1,0 +1,149 @@
+{
+  "title": "Тест на понимание темы: Перенаправление вывода в файл или программу",
+  "materialType": "test",
+  "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+  "difficulty": 1,
+  "duration": "PT0H30M",
+  "tags": {
+    "$ref": "../../material-tags.json"
+  },
+  "skills": {},
+  "passingScore": 100,
+  "assets": {
+    "$ref": "./assets"
+  },
+  "questions": [
+    {
+      "question": "Какой элемент представляет число, которое идентифицирует пользователя на самом фундаментальном уровне?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "primary user",
+          "correct": false
+        },
+        {
+          "answer": "UID",
+          "correct": true
+        },
+        {
+          "answer": "GID",
+          "correct": false
+        },
+        {
+          "answer": "username",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Какой элемент является программой, предоставляющей пользователю приглашение командной строки?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "Первичная оболочка (primary shell)",
+          "correct": false
+        },
+        {
+          "answer": "Домашний каталог",
+          "correct": false
+        },
+        {
+          "answer": "Оболочка входа (login shell)",
+          "correct": true
+        },
+        {
+          "answer": "Команда",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "В каком элементе или файле располагается информация о локальной группе?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "В домашнем каталоге",
+          "correct": false
+        },
+        {
+          "answer": "/etc/passwd",
+          "correct": false
+        },
+        {
+          "answer": "/etc/GID",
+          "correct": false
+        },
+        {
+          "answer": "/etc/group",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "В каком элементе или файле располагаются личные файлы пользователя?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": " В домашнем каталоге",
+          "correct": true
+        },
+        {
+          "answer": "В оболочке входа (login shell)",
+          "correct": false
+        },
+        {
+          "answer": "/etc/passwd",
+          "correct": false
+        },
+        {
+          "answer": "/etc/group",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Какой элемент представляет собой число, которое идентифицирует группу на самом фундаментальном уровне?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "primary group",
+          "correct": false
+        },
+        {
+          "answer": "UID",
+          "correct": false
+        },
+        {
+          "answer": "GID",
+          "correct": true
+        },
+        {
+          "answer": "groupid",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "В каком элементе или файле располагается информация о локальной учетной записи пользователя?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "В домашнем каталоге",
+          "correct": false
+        },
+        {
+          "answer": "/etc/passwd",
+          "correct": true
+        },
+        {
+          "answer": "/etc/UID",
+          "correct": false
+        },
+        {
+          "answer": "/etc/group",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

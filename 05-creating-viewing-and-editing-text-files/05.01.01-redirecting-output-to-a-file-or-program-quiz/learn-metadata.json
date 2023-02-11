@@ -1,0 +1,149 @@
+{
+  "title": "Тест на понимание темы: Перенаправление вывода в файл или программу",
+  "materialType": "test",
+  "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+  "difficulty": 1,
+  "duration": "PT0H30M",
+  "tags": {
+    "$ref": "../../material-tags.json"
+  },
+  "skills": {},
+  "passingScore": 100,
+  "assets": {
+    "$ref": "./assets"
+  },
+  "questions": [
+    {
+      "question": "Какой ответ направляет вывод на терминал и игнорирует все ошибки?\n",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "&>file\n",
+          "correct": false
+        },
+        {
+          "answer": "2> &>file\n",
+          "correct": false
+        },
+        {
+          "answer": "2>/dev/null\n",
+          "correct": true
+        },
+        {
+          "answer": "1>/dev/null\n",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Какой ответ направляет вывод в один файл, а ошибки в другой?\n",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": ">file 2>file2\n",
+          "correct": true
+        },
+        {
+          "answer": ">file 1>file2\n",
+          "correct": false
+        },
+        {
+          "answer": ">file &2>file2\n",
+          "correct": false
+        },
+        {
+          "answer": "| tee file\n",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Какой ответ направляет как вывод, так и ошибки в файл, создавая его или перезаписывая его содержимое?\n",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "| tee file\n",
+          "correct": false
+        },
+        {
+          "answer": "2 &>file\n",
+          "correct": false
+        },
+        {
+          "answer": "1 &>file\n",
+          "correct": false
+        },
+        {
+          "answer": "&>file\n",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Какой ответ направляет как вывод, так и ошибки в один и тот же файл, гарантируя, что существующее содержимое файла сохранится?\n",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": ">file 2>file2\n",
+          "correct": false
+        },
+        {
+          "answer": "&>file\n",
+          "correct": false
+        },
+        {
+          "answer": ">>file 2>&1\n",
+          "correct": true
+        },
+        {
+          "answer": ">>file 1>&1\n",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Какой ответ отбрасывает все сообщения, обычно отправляемые на терминал?\n",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": ">file 2>file2\n",
+          "correct": false
+        },
+        {
+          "answer": "&>/dev/null\n",
+          "correct": true
+        },
+        {
+          "answer": "&>/dev/null 2>file\n",
+          "correct": false
+        },
+        {
+          "answer": "&>file\n",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Какой ответ направляет вывод одновременно на экран и в файл?\n",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "&>/dev/null\n",
+          "correct": false
+        },
+        {
+          "answer": ">file 2>file2\n",
+          "correct": false
+        },
+        {
+          "answer": "| tee file\n",
+          "correct": true
+        },
+        {
+          "answer": "| < file\n",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
