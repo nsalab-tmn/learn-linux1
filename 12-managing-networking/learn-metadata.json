@@ -1,5 +1,5 @@
 {
-    "title": "Управление сетями",
+    "title": "Управление сетями в Linux",
     "materialType": "course",
     "tags": {
         "$ref": "../material-tags.json"
