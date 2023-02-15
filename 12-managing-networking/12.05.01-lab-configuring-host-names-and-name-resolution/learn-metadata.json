@@ -1,0 +1,27 @@
+{
+    "title": "Лабораторная работа: Настройка имен хостов и разрешения имен",
+    "shortName": "lab-12.5.1",
+    "materialType": "lab",
+    "description": "**Цель лабораторной работы**: Получение базовых навыков настройки статических имён хостов и разрешения имён",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    
+    "assets": { "$ref": "./assets" }
+}

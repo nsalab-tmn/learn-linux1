@@ -1,0 +1,27 @@
+{
+    "title": "Практическая работа: настройка и управление сервером",
+    "shortName": "lab-16.3",
+    "materialType": "lab",
+    "description": "**Цель лабораторной работы**: Проверка базовых навыков управления сервером",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    
+    "assets": { "$ref": "./assets" }
+}

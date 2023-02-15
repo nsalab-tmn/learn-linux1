@@ -49,6 +49,9 @@
         },
         {
             "$ref": "./15-accessing-linux-file-systems/learn-metadata.json"
+        },
+        {
+            "$ref": "./16-comprehensive-review/learn-metadata.json"
         }
     ]
 }

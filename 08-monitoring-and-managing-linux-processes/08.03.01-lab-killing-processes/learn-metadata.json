@@ -1,0 +1,27 @@
+{
+    "title": "Лабораторная работа: Завершение процессов",
+    "shortName": "lab-8.3.1",
+    "materialType": "lab",
+    "description": "**Цель лабораторной работы**: Получение базовых навыков запуска и остановки процессов командной оболочки.",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    
+    "assets": { "$ref": "./assets" }
+}

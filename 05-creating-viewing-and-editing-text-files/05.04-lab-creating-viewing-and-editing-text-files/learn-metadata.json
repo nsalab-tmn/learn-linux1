@@ -1,0 +1,27 @@
+{
+    "title": "Лабораторная работа: Создание, просмотр и редактирование текстовых файлов",
+    "shortName": "lab-5.4",
+    "materialType": "lab",
+    "description": "**Цель лабораторной работы**: Проверка базовых навыков использования редактора Vim",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    
+    "assets": { "$ref": "./assets" }
+}

@@ -1,0 +1,24 @@
+{
+    "title": "Подробный обзор",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./16.01-lab-managing-files-from-the-command-line/learn-metadata.json"
+        },
+        {
+            "$ref": "./16.02-lab-managing-users-and-groups-permissions-and-processes/learn-metadata.json"
+        },
+        {
+            "$ref": "./16.03-lab-configuring-and-managing-a-server/learn-metadata.json"
+        },
+        {
+            "$ref": "./16.04-lab-managing-networks/learn-metadata.json"
+        },
+        {
+            "$ref": "./16.05-mounting-file-systems-and-finding-files/learn-metadata.json"
+        }
+    ]
+}

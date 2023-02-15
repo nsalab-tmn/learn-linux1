@@ -1,0 +1,27 @@
+{
+    "title": "Лабораторная работа: Сохранение системного журнала",
+    "shortName": "lab-11.4.1",
+    "materialType": "lab",
+    "description": "**Цель лабораторной работы**: Получение базовых навыков настройки системного журнала для сохранения данных",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    
+    "assets": { "$ref": "./assets" }
+}

@@ -1,0 +1,27 @@
+{
+    "title": "Лабораторная работа: Анализ и сохранение log-файлов",
+    "shortName": "lab-11.6",
+    "materialType": "lab",
+    "description": "**Цель лабораторной работы**: Проверка базовых навыков работы с системным журналом",
+    "difficulty": 1,
+    "duration": "PT0H22M",
+    "tags": { "$ref": "../../material-tags.json" },
+    "credentialsSchema": {
+        "userName": {
+            "title": "Имя пользователя",
+            "source": "learn_user"
+        },
+        "password": {
+            "title": "Пароль",
+            "source": "learn_password"
+        },
+        "consoleURL": {
+            "title": "Адрес портала",
+            "value": "https://portal.skillscloud.company"
+        }
+    },
+    "skills": {},
+    "text": { "$ref": "./README.md" },
+    
+    "assets": { "$ref": "./assets" }
+}
