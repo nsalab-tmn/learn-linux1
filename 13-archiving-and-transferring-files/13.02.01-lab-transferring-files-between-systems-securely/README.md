@@ -30,6 +30,7 @@
   <details>
   <summary>Показать решение</summary>
 
+
   2.1.	На **servera** создайте каталог с именем **/home/student/serverbackup**.
 
   ```

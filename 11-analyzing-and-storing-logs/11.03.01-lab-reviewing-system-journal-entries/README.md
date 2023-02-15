@@ -28,6 +28,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ journalctl _PID=1
   ...output omitted...
@@ -46,6 +47,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ journalctl _UID=81
   ...output omitted...
@@ -60,6 +62,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ journalctl -p warning
   ...output omitted...
@@ -83,6 +86,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
 
   Используйте опцию `--since` с командой `journalctl`, чтобы отобразить все события журнала, записанные на **servera** в течение последних 10 минут. Нажмите **q**, чтобы выйти из команды `journalctl`.
 
@@ -116,6 +120,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ journalctl --since 9:00:00 _SYSTEMD_UNIT="sshd.service"
   ...output omitted...

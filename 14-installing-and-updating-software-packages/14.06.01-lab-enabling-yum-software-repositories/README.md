@@ -79,6 +79,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum config-manager --disable rht-updates
   ```
@@ -88,6 +89,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum list rht-system
   Available Packages
@@ -112,6 +114,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum list rht-system
   Installed Packages
@@ -125,6 +128,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum config-manager --enable rht-updates
   ```
@@ -134,6 +138,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum update
   Dependencies resolved.

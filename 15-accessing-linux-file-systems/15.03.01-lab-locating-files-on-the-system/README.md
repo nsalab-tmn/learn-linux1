@@ -30,6 +30,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo updatedb
   [sudo] password for student: student
@@ -41,6 +42,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ locate logrotate.conf
   /etc/logrotate.conf
@@ -52,6 +54,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ locate -i networkmanager.conf
   /etc/NetworkManager/NetworkManager.conf
@@ -67,6 +70,7 @@
   <details>
   <summary>Показать решение</summary>
 
+
   Используйте команду `sudo`, так как файлы внутри каталога **/var/lib** принадлежат пользователю *root*.
 
   ```
@@ -81,6 +85,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo find /var -user root -group mail
   /var/spool/mail
@@ -91,6 +96,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ find /usr/bin -size +50k
   /usr/bin/iconv
@@ -105,6 +111,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ find /home/student -mmin +120
   /home/student/.bash_logout
@@ -118,6 +125,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ find /dev -type b
   /dev/vdd

@@ -30,6 +30,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ mkdir /home/student/bin
     ```
@@ -56,6 +57,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ chmod +x /home/student/bin/killing
     ```
@@ -65,6 +67,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ cd /home/student/bin
     [student@servera bin]$ killing network &
@@ -82,6 +85,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ tail -f ~/killing_outfile
     network interface network connection interface network connection interface network
@@ -93,6 +97,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera bin]$ jobs
     [1]   Running                 killing network &
@@ -107,6 +112,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera bin]$ kill -SIGSTOP %1
     [1]+  Stopped                 killing network
@@ -130,6 +136,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera bin]$ kill -SIGTERM %2
     [student@servera bin]$ jobs
@@ -152,6 +159,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera bin]$ kill -SIGCONT %1
     [student@servera bin]$ jobs
@@ -173,6 +181,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera bin]$ kill -SIGTERM %1
     [student@servera bin]$ kill -SIGTERM %3
@@ -188,6 +197,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera bin]$ ps -ef | grep tail
     student   4581 31358  0 10:02 pts/0    00:00:00 tail -f killing_outfile
@@ -199,6 +209,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera bin]$ pkill -SIGTERM tail
     [student@servera bin]$ ps -ef | grep tail

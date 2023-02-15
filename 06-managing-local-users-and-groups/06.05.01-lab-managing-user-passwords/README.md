@@ -30,6 +30,8 @@
 
     <details>
     <summary>Показать решение</summary>
+
+
     ```
     [student@servera ~]$ sudo usermod -L operator1
     [sudo] password for student: student
@@ -40,6 +42,8 @@
 
     <details>
     <summary>Показать решение</summary>
+
+
     ```
     [student@servera ~]$ su - operator1
     Password: redhat
@@ -51,6 +55,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ sudo usermod -U operator1
     ```
@@ -60,6 +65,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ su - operator1
     Password: redhat
@@ -72,6 +78,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ exit
     logout
@@ -84,6 +91,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ sudo chage -M 90 operator1
     ```
@@ -93,6 +101,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ sudo chage -l operator1
     Last password change      : Jan 25, 2019
@@ -109,6 +118,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ sudo chage -d 0 operator1
     ```
@@ -120,6 +130,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ su - operator1
     Password: redhat
@@ -136,6 +147,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ exit
     logout
@@ -148,6 +160,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ date -d "+180 days" +%F
     2019-07-24
@@ -160,6 +173,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ sudo chage -E 2019-07-24 operator1
     ```
@@ -169,6 +183,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ sudo chage -l operator1
     Last password change      : Jan 25, 2019
@@ -187,6 +202,8 @@
 
     <details>
     <summary>Показать решение</summary>
+
+
     ```
     ...output omitted...
     # Password aging controls:

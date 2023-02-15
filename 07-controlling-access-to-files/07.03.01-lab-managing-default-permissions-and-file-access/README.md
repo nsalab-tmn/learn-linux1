@@ -29,6 +29,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ su - operator1
     Password: redhat
@@ -40,6 +41,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ umask
     0002
@@ -50,6 +52,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
 
     4.1.	С помощью команды `mkdir` создайте каталог **/tmp/shared**. С помощью команды `ls -ld` отобразите список разрешений для нового каталога.
 
@@ -77,6 +80,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
 
     5.1.	С помощью команды `chown` измените группу-владельца каталога **/tmp/shared** на *operators*.
 
@@ -109,6 +113,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ chmod g+s /tmp/shared
     ```
@@ -118,6 +123,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ touch /tmp/shared/operations_database.txt
     ```
@@ -127,6 +133,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ ls -l /tmp/shared/operations_database.txt
     -rw-rw-r--. 1 operator1 operators 0 Feb  4 16:11 /tmp/shared/operations_database.txt 
@@ -137,6 +144,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
 
     7.1.	С помощью команды `touch` создайте файл с именем **operations_network.txt** в каталоге **/tmp/shared**.
 
@@ -180,6 +188,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ umask
     0002 
@@ -192,6 +201,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ echo "umask 007" >> ~/.bashrc
     [operator1@servera ~]$ cat ~/.bashrc
@@ -215,6 +225,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ exit
     logout

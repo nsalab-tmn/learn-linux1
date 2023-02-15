@@ -30,6 +30,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ mkdir /home/student/bin
     ```
@@ -54,6 +55,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ chmod a+x /home/student/bin/monitor
     ```
@@ -63,6 +65,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ top
     top - 12:13:03 up 11 days, 58 min,  3 users,  load average: 0.00, 0.00, 0.00
@@ -85,6 +88,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ lscpu
     Architecture:        x86_64
@@ -99,6 +103,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ monitor &
     [1] 6071  
@@ -125,6 +130,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ monitor &
     [2] 6498  
@@ -151,6 +157,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ monitor &
     [3] 6881 
@@ -171,6 +178,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ monitor &
     [4] 10708

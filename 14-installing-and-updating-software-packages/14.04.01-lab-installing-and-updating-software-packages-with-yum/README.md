@@ -46,6 +46,7 @@
   <details>
   <summary>Показать решение</summary>
 
+
   ```
   [root@servera ~]# yum search guile
   ========================= Name Exactly Matched: guile ===============
@@ -67,6 +68,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
 
   ```
   [root@servera ~]# yum install guile
@@ -102,6 +104,7 @@
   <details>
   <summary>Показать решение</summary>
 
+
   ```
   [root@servera ~]# yum remove guile
   ...output omitted...
@@ -130,6 +133,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
 
   ```
   [root@servera ~]# yum remove gc
@@ -169,6 +173,7 @@
   <details>
   <summary>Показать решение</summary>
 
+
   ```
   [root@servera ~]# yum group info "Security Tools"
   Group: Security Tools
@@ -195,6 +200,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
 
   ```
   [root@servera ~]# yum group install "Security Tools"
@@ -232,6 +238,7 @@
   <details>
   <summary>Показать решение</summary>
 
+
   ```
   [root@servera ~]# yum history
   ID     | Command line             | Date and time    | Action(s)      | Altered
@@ -251,6 +258,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
 
   ```
   [root@servera ~]# yum history info 6
@@ -274,6 +282,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   
   ```
   [root@servera ~]# yum history undo 5

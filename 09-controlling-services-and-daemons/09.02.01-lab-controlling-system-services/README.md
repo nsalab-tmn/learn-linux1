@@ -30,6 +30,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ systemctl status sshd
   ● sshd.service - OpenSSH server daemon
@@ -50,6 +51,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo systemctl restart sshd
   [sudo] password for student: student
@@ -72,6 +74,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo systemctl reload sshd
   [student@servera ~]$ systemctl status sshd
@@ -93,6 +96,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ systemctl status chronyd
   ● chronyd.service - NTP client/server
@@ -108,6 +112,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo systemctl stop chronyd
   [student@servera ~]$ systemctl status chronyd
@@ -127,6 +132,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@server ~]$ systemctl is-enabled chronyd
   enabled
@@ -137,6 +143,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo systemctl reboot
   Connection to servera closed by remote host.
@@ -150,6 +157,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@workstation ~]$ ssh student@servera
   ...output omitted...
@@ -167,6 +175,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo systemctl disable chronyd
   [sudo] password for student: student
@@ -185,6 +194,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo systemctl reboot
   Connection to servera closed by remote host.
@@ -197,6 +207,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@workstation ~]$ ssh student@servera
   ...output omitted...

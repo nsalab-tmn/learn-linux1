@@ -43,6 +43,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ip link
   1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -59,6 +60,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ nmcli con show
   NAME                UUID                                  TYPE      DEVICE
@@ -74,6 +76,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ nmcli con show --active
   NAME                UUID                                  TYPE      DEVICE
@@ -85,6 +88,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ nmcli con show "Wired connection 1"
   connection.id:               Wired connection 1
@@ -131,6 +135,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ nmcli dev status
   DEVICE  TYPE      STATE      CONNECTION
@@ -168,6 +173,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo nmcli con add con-name "static-addr" ifname enX \
   type ethernet ipv4.method manual \
@@ -180,6 +186,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo nmcli con mod "static-addr" ipv4.dns 172.25.250.254
   ```
@@ -189,6 +196,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
 
   6.1.	Просмотрите все подключения.
 
@@ -228,6 +236,7 @@
   <details>
   <summary>Показать решение</summary>
 
+
   7.1.	Отключите автоматический запуск исходного подключения при начальной загрузке системы.
 
   ```
@@ -262,6 +271,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ip addr show enX
   2: enX: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
@@ -277,6 +287,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ip route
   default via 172.25.250.254 dev enX proto static metric 100
@@ -288,6 +299,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ping -c3 172.25.250.254
   PING 172.25.250.254 (172.25.250.254) 56(84) bytes of data.

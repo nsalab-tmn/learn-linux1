@@ -30,6 +30,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ vim ~/.bashrc
     ```
@@ -39,6 +40,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     ...output omitted...
     # User specific environment and startup programs
@@ -52,6 +54,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ exit
     logout
@@ -68,6 +71,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera 14:47:05 ~]$ file=tmp.zdkei083
     ```
@@ -77,6 +81,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera 14:48:35 ~]$ echo $file
     tmp.zdkei083 
@@ -87,6 +92,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera 14:59:07 ~]$ ls -l $file
     -rw-rw-r--. 1 student student 0 Jan 23 14:59 tmp.zdkei083
@@ -100,6 +106,7 @@
 
     <details>
     <summary>Показать решение</summary>
+    
     ```
     [student@servera 14:46:40 ~]$ export EDITOR=vim
     [student@servera 14:46:55 ~]$ echo $EDITOR

@@ -30,6 +30,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo -i
   [sudo] password for student: student
@@ -49,6 +50,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# systemctl restart rsyslog
   ```
@@ -60,6 +62,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# logger -p user.debug "Debug Message Test"
   ```

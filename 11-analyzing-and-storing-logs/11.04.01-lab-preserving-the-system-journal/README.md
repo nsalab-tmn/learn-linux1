@@ -29,6 +29,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo ls /var/log/journal
   [sudo] password for student: student
@@ -44,6 +45,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   ...output omitted...
   [Journal]
@@ -56,6 +58,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo systemctl restart systemd-journald.service
   ```
@@ -67,6 +70,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo systemctl reboot
   Connection to servera closed by remote host.
@@ -81,6 +85,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@workstation ~]$ ssh student@servera
   ...output omitted...
@@ -92,6 +97,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo ls /var/log/journal
   [sudo] password for student: student

@@ -29,6 +29,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ su -
   Password: redhat
@@ -40,6 +41,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# tar -czf /tmp/etc.tar.gz /etc
   tar: Removing leading `/' from member names
@@ -51,6 +53,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# tar -tzf /tmp/etc.tar.gz
   etc/
@@ -66,6 +69,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
 
   5.1.	Создайте каталог **/backuptest**.
 

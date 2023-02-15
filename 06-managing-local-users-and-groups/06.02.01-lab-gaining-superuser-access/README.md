@@ -30,6 +30,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ id
     uid=1000(student) gid=1000(student) groups=1000(student),10(wheel) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
@@ -40,6 +41,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ pwd
     /home/student
@@ -50,6 +52,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ echo $HOME
     /home/student
@@ -64,6 +67,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ sudo su
     [sudo] password for student: student
@@ -75,6 +79,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera student]# id
     uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
@@ -85,6 +90,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera student]# pwd
     /home/student
@@ -95,6 +101,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera student]# echo $HOME
     /root
@@ -121,6 +128,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ sudo su -
     [root@servera ~]# 
@@ -135,6 +143,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# id
     uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
@@ -145,6 +154,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# pwd
     /root
@@ -155,6 +165,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# echo $HOME
     /root
@@ -177,6 +188,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ sudo cat /etc/sudoers.d/operator1
     operator1 ALL=(ALL) ALL
@@ -189,6 +201,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ su - operator1
     Password: redhat
@@ -200,6 +213,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ tail -5 /var/log/messages
     tail: cannot open '/var/log/messages' for reading: Permission denied
@@ -210,6 +224,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ sudo tail -5 /var/log/messages
     [sudo] password for operator1: redhat
@@ -225,6 +240,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ cp /etc/motd /etc/motdOLD
     cp: cannot create regular file '/etc/motdOLD': Permission denied
@@ -235,6 +251,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ sudo cp /etc/motd /etc/motdOLD
     [operator1@servera ~]$ 
@@ -245,6 +262,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [operator1@servera ~]$ rm /etc/motdOLD
     rm: remove write-protected regular empty file '/etc/motdOLD'? y
@@ -257,6 +275,7 @@
 
     <details>
     <summary>Показать решение</summary>
+    
     ```
     [operator1@servera ~]$ sudo rm /etc/motdOLD
     [operator1@servera ~]$ 

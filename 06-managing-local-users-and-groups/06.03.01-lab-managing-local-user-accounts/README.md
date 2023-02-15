@@ -28,6 +28,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ sudo su -
     [sudo] password for student: student
@@ -39,6 +40,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# useradd operator1
     [root@servera ~]# tail /etc/passwd
@@ -51,6 +53,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# passwd operator1
     Changing password for user operator1.
@@ -67,6 +70,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# useradd operator2
     [root@servera ~]# passwd operator2
@@ -82,6 +86,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# useradd operator3
     [root@servera ~]# passwd operator3
@@ -99,6 +104,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# usermod -c "Operator One" operator1
     ```
@@ -108,6 +114,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# usermod -c "Operator Two" operator2
     ```
@@ -118,6 +125,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# tail /etc/passwd
     ...output omitted...
@@ -133,6 +141,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# userdel -r operator3
     ```
@@ -142,6 +151,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# tail /etc/passwd
     ...output omitted...
@@ -156,6 +166,7 @@
 
     <details>
     <summary>Показать решение</summary>
+    
     ```
     [root@servera ~]# exit
     logout

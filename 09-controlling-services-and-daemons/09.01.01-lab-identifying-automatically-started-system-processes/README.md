@@ -28,6 +28,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ systemctl list-units --type=service
   UNIT                 LOAD   ACTIVE SUB     DESCRIPTION
@@ -47,6 +48,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ systemctl list-units --type=socket --all
   UNIT                 LOAD   ACTIVE   SUB       DESCRIPTION
@@ -72,6 +74,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ systemctl status chronyd
   ● chronyd.service - NTP client/server
@@ -102,6 +105,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ps -p 680
     PID TTY          TIME CMD
@@ -115,6 +119,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ systemctl is-enabled sshd
   enabled
@@ -125,6 +130,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ systemctl is-active sshd
   active
@@ -135,6 +141,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ systemctl status sshd
   ● sshd.service - OpenSSH server daemon
@@ -166,6 +173,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ systemctl list-unit-files --type=service
   UNIT FILE                    STATE          

@@ -35,6 +35,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ip link
   1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -62,6 +63,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ip -s link show enX
   2: enX: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP mode DEFAULT group default qlen 1000
@@ -77,6 +79,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ip route
   default via 172.25.250.254 dev enX proto static metric 100
@@ -88,6 +91,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ping -c3 172.25.250.254
   PING 172.25.250.254 (172.25.250.254) 56(84) bytes of data.
@@ -105,6 +109,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ tracepath classroom.example.com
   1?: [LOCALHOST]                      pmtu 1500
@@ -119,6 +124,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ss -lt
   State      Recv-Q Send-Q      Local Address:Port         Peer Address:Port

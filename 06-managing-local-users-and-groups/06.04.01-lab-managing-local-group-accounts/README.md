@@ -28,6 +28,8 @@
 
     <details>
     <summary>Показать решение</summary>
+
+
     ```
     [student@servera ~]$ sudo su -
     [sudo] password for student: student
@@ -39,6 +41,8 @@
 
     <details>
     <summary>Показать решение</summary>
+
+
     ```
     [root@servera ~]# groupadd -g 30000 operators
     ```
@@ -48,6 +52,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# groupadd admin
     ```
@@ -57,6 +62,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# tail /etc/group
     ...output omitted...
@@ -71,6 +77,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# usermod -aG operators operator1
     [root@servera ~]# usermod -aG operators operator2
@@ -82,6 +89,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# id operator1
     uid=1002(operator1) gid=1002(operator1) groups=1002(operator1),30000(operators)
@@ -98,6 +106,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# usermod -aG admin sysadmin1
     [root@servera ~]# usermod -aG admin sysadmin2
@@ -109,6 +118,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# id sysadmin1
     uid=1005(sysadmin1) gid=1005(sysadmin1) groups=1005(sysadmin1),30001(admin)
@@ -123,6 +133,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# tail /etc/group
     ...output omitted...
@@ -135,6 +146,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# echo "%admin ALL=(ALL) ALL" >> /etc/sudoers.d/admin
     ```
@@ -144,6 +156,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# su - sysadmin1
     [sysadmin1@servera ~]$ sudo cat /etc/sudoers.d/admin

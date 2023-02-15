@@ -28,6 +28,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@serverb ~]$ su - operator1
   Password: redhat
@@ -39,6 +40,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [operator1@serverb ~]$ ssh-keygen
   Generating public/private rsa key pair.
@@ -69,6 +71,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [operator1@serverb ~]$ ssh-copy-id operator1@servera
   /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/operator1/.ssh/id_rsa.pub"
@@ -89,6 +92,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [operator1@serverb ~]$ ssh operator1@servera hostname
   servera.lab.example.com
@@ -107,6 +111,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [operator1@serverb ~]$ ssh-keygen -f .ssh/key2
   Generating public/private rsa key pair.
@@ -135,6 +140,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [operator1@serverb ~]$ ssh-copy-id -i .ssh/key2.pub operator1@servera
   /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: ".ssh/key2.pub"
@@ -154,6 +160,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [operator1@serverb ~]$ ssh -i .ssh/key2 operator1@servera hostname
   Enter passphrase for key '.ssh/key2': redhatpass
@@ -169,6 +176,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [operator1@serverb ~]$ eval $(ssh-agent)
   Agent pid 21032
@@ -184,6 +192,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [operator1@serverb ~]$ ssh -i .ssh/key2 operator1@servera hostname
   servera.lab.example.com
@@ -196,6 +205,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@workstation ~]$ ssh student@serverb
   ...output omitted...
@@ -207,6 +217,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
 
   11.1.	Выполните команду `su`, чтобы переключиться на пользователя *operator1*. Используйте *redhat* в качестве пароля пользователя *operator1*.
 

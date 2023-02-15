@@ -31,6 +31,7 @@
   <details>
   <summary>Показать решение</summary>
 
+
   2.1.	На **servera** создайте целевой каталог с именем **/home/student/serverlogs** для хранения log-файлов, синхронизированных с хоста **serverb**.
 
   ```
@@ -58,6 +59,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ssh root@serverb 'logger "Log files synchronized"'
   Password: redhat
@@ -69,6 +71,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ rsync -av root@serverb:/var/log ~/serverlogs
   root@serverb's password: redhat 

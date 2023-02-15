@@ -20,6 +20,7 @@
 
     <details>
     <summary>Примечание</summary>
+
     Вывод может немного отличаться от показанных примеров.
     </details>
 
@@ -59,22 +60,7 @@
 
 3. Сделайте копию файла, добавив к имени дату
 
-    <details>
-    <summary>Показать решение</summary>
-    ```
-    [student@workstation ~]$ cp editing_final_lab.txt editing_final_lab_$(date +%s).txt
-    ```
-    </details>
-
 4.	Добавьте в файл пунктирную линию. Пунктирная линия должна содержать не менее 12 дефисов.
-
-    <details>
-    <summary>Показать решение</summary>
-    ```
-    [student@workstation ~]$ echo "----------------------------------------"
-    >> editing_final_lab.txt
-    ```
-    </details>
 
 5.	Добавьте список содержимого каталога **Documents**. Выведите список содержимого каталога на терминал и отправьте его в файл editing_final_lab.txt с помощью одной команды.
 

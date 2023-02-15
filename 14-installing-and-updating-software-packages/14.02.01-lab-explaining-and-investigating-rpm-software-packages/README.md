@@ -30,6 +30,7 @@
   <details>
   <summary>Показать решение</summary>
 
+
   2.1.	Посмотрите информацию о пакете **rhcsa-script-1.0.0-1.noarch.rpm**.
 
   ```
@@ -83,6 +84,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ rpm2cpio rhcsa-script-1.0.0-1.noarch.rpm | cpio -tv
   -rw-r--r--   1 root     root    1056 Mar  6 15:59 ./opt/rhcsa-script/mymotd
@@ -94,6 +96,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ rpm2cpio rhcsa-script-1.0.0-1.noarch.rpm | cpio -idv
   ./opt/rhcsa-script/mymotd
@@ -105,6 +108,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ls -lR opt
   opt:
@@ -121,6 +125,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
 
   4.1.	С помощью команды `sudo rpm -ivh` установите RPM-пакет **rhcsa-script-1.0.0-1.noarch.rpm**.
 

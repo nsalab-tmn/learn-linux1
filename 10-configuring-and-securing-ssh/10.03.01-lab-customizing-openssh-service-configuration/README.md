@@ -20,6 +20,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@workstation ~]$ ssh student@serverb
   ...output omitted...
@@ -31,6 +32,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@serverb ~]$ su - operator2
   Password: redhat
@@ -42,6 +44,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [operator2@serverb ~]$ ssh-keygen
   Generating public/private rsa key pair.
@@ -72,6 +75,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [operator2@serverb ~]$ ssh-copy-id operator2@servera
   /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/operator1/.ssh/id_rsa.pub"
@@ -93,6 +97,7 @@
   <details>
   <summary>Показать решение</summary>
 
+
   Установите SSH-подключение к **servera** как пользователь *operator2*.
 
   ```
@@ -110,6 +115,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   
   Установите SSH-подключение к **servera** как пользователь *root* с паролем *redhat*.
 
@@ -129,6 +135,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   
   Установите SSH-подключение к **servera** как пользователь *operator3* с паролем *redhat*.
 
@@ -150,6 +157,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [operator2@serverb ~]$ ssh operator2@servera
   ...output omitted...
@@ -161,6 +169,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [operator2@servera ~]$ su -
   Password: redhat
@@ -172,6 +181,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   ...output omitted...
   PermitRootLogin no
@@ -209,6 +219,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   ...output omitted...
   PasswordAuthentication no

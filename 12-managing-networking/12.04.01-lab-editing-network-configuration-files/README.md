@@ -33,6 +33,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ip link
   1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -51,6 +52,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
 
   3.1.	Выполните команду `sudo -i`, чтобы переключиться на пользователя *root*. Пароль для пользователя *student* — *student*.
 
@@ -78,6 +80,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
 
   4.1.	Перезагрузите измененную конфигурацию.
 
@@ -122,6 +125,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
 
   7.1.	С **workstation** с помощью команды `ssh` войдите на **serverb** как пользователь *student*.
 

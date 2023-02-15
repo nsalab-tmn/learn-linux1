@@ -28,6 +28,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ su -
     Password: redhat
@@ -39,6 +40,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# mkdir /home/consultants
     ```
@@ -48,6 +50,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# chown :consultants /home/consultants
     ```
@@ -59,6 +62,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# ls -ld /home/consultants
     drwxr-xr-x.  2 root    consultants       6 Feb  1 12:08 /home/consultants
@@ -71,6 +75,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# chmod g+w /home/consultants
     [root@servera ~]# ls -ld /home/consultants
@@ -82,6 +87,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [root@servera ~]# chmod 770 /home/consultants
     [root@servera ~]# ls -ld /home/consultants
@@ -104,6 +110,7 @@
     <details>
     <summary>Показать решение</summary>
 
+
     7.1.	С помощью команды `cd` перейдите в каталог **/home/consultants**.
 
     ```
@@ -121,6 +128,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [consultant1@servera consultants]$ ls -l consultant1.txt
     -rw-rw-r--. 1 consultant1 consultant1 0 Feb  1 12:53 consultant1.txt
@@ -131,6 +139,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     
     9.1.	С помощью команды `chown` измените группу-владельца файла **consultant1.txt** на *consultants*.
 
@@ -163,6 +172,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [consultant2@servera ~]$ cd /home/consultants/
     [consultant2@servera consultants]$ echo "text" >> consultant1.txt
@@ -174,6 +184,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [consultant2@servera consultants]$ cat consultant1.txt
     text

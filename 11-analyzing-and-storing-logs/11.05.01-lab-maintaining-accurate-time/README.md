@@ -30,6 +30,7 @@
   <details>
   <summary>Показать решение</summary>
 
+
   2.1.	Выполните команду `tzselect`, чтобы определить часовой пояс для Гаити.
 
   
@@ -115,6 +116,7 @@
   <details>
   <summary>Показать решение</summary>
 
+
   3.1.	Отредактируйте файл **/etc/chrony.conf**, чтобы указать сервер **classroom.example.com** в качестве источника времени NTP. Используйте команду `sudo vim /etc/chrony.conf`, чтобы отредактировать файл конфигурации. В следующем выводе показана строка, которую необходимо добавить в файл конфигурации:
 
   ```
@@ -140,6 +142,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ timedatectl
                 Local time: Tue 2019-02-19 01:52:17 EST
@@ -159,6 +162,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ chronyc sources -v
   210 Number of sources = 1

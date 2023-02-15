@@ -30,6 +30,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ mkdir /home/student/bin
     ```
@@ -52,6 +53,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ chmod +x /home/student/bin/control
     ```
@@ -61,6 +63,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
 
     Вы можете выполнить сценарий control, поскольку он находится в вашем PATH и сделан исполняемым.
     
@@ -74,6 +77,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ tail -f ~/control_outfile
     technical technical technical technical
@@ -97,6 +101,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ jobs
     [1]+  Stopped                 control technical 
@@ -107,6 +112,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ bg
     [1]+ control technical & 
@@ -117,6 +123,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ jobs
     [1]+  Running                 control technical & 
@@ -134,6 +141,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ control documents &
     [2] 6579
@@ -149,6 +157,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ jobs
     [1]   Running                 control technical &
@@ -165,6 +174,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ fg %1
     control technical
@@ -188,6 +198,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ fg %2
     control documents
@@ -210,6 +221,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ ps jT
     PPID   PID  PGID   SID TTY      TPGID STAT   UID   TIME COMMAND
@@ -226,6 +238,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     [student@servera ~]$ jobs
     [1]+  Stopped                 control technical
@@ -247,6 +260,7 @@
 
     <details>
     <summary>Показать решение</summary>
+
     ```
     ...output omitted...
     Ctrl+c

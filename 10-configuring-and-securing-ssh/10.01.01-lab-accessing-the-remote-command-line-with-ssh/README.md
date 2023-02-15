@@ -60,6 +60,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@serverb ~]$ exit
   logout
@@ -72,6 +73,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ssh root@serverb
   root@serverb's password: redhat
@@ -98,6 +100,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@serverb ~]# exit
   logout
@@ -110,6 +113,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ rm /home/student/.ssh/known_hosts
   ```
@@ -136,6 +140,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@serverb ~]$ exit
   logout
@@ -149,6 +154,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ cat /home/student/.ssh/known_hosts
   serverb,172.25.250.11 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBI9LEYEhwmU1rNqnbBPukH2Ba0/QBAu9WbS4m03B3MIhhXWKFFNa/UlNjY8NDpEM+hkJe/GmnkcEYMLbCfd9nMA=
@@ -161,6 +167,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ ssh student@serverb hostname
   student@serverb's password: student

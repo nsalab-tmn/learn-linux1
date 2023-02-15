@@ -38,6 +38,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum module list
   Red Hat Enterprise Linux 8.2 AppStream (dvd)
@@ -55,6 +56,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum module list --installed
   Red Hat Enterprise Linux 8.2 AppStream (dvd)
@@ -69,6 +71,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum module info python36
   Name             : python36
@@ -97,6 +100,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum module install python36:3.6/common
   ...output omitted...
@@ -110,6 +114,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum module list python36
   Red Hat Enterprise Linux 8.2 AppStream (dvd)
@@ -126,6 +131,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum module list postgresql
   Red Hat Enterprise Linux 8.2 AppStream (dvd)
@@ -142,6 +148,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum module remove postgresql
   ...output omitted...
@@ -157,6 +164,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum module reset postgresql
   =================================================================
@@ -177,6 +185,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum module install postgresql:10
   ...output omitted...
@@ -190,6 +199,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum module list postgresql
   Red Hat Enterprise Linux 8.2 AppStream (dvd)
@@ -208,6 +218,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum module remove postgresql
   ...output omitted...
@@ -221,6 +232,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum module disable postgresql
   ...output omitted...
@@ -234,6 +246,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [root@servera ~]# yum module list postgresql
   Red Hat Enterprise Linux 8.2 AppStream (dvd)

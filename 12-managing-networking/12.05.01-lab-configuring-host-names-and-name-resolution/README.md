@@ -31,6 +31,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ hostname
   servera.lab.example.com
@@ -41,6 +42,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ hostnamectl status
     Static hostname: n/a
@@ -65,6 +67,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo hostnamectl set-hostname \
   servera.lab.example.com
@@ -83,6 +86,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ hostnamectl status
     Static hostname: servera.lab.example.com
@@ -106,6 +110,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ sudo hostname testname
   ```
@@ -115,6 +120,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ hostname
   testname
@@ -148,6 +154,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ hostname
   servera.lab.example.com
@@ -160,6 +167,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ host classroom.example.com
   classroom.example.com has address 172.25.254.254
@@ -170,6 +178,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
   ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
@@ -184,6 +193,7 @@
 
   <details>
   <summary>Показать решение</summary>
+
   ```
   [student@servera ~]$ host class
   Host class not found: 2(SERVFAIL)
