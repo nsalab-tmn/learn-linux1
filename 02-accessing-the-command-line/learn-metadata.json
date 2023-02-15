@@ -1,0 +1,33 @@
+{
+    "title": "Доступ к командной строке",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./02.01-accessing-the-command-line/learn-metadata.json"
+        },
+        {
+            "$ref": "./02.01.01-quiz-accessing-the-command-line/learn-metadata.json"
+        },
+        {
+            "$ref": "./02.02-accessing-the-command-line-using-the-desktop/learn-metadata.json"
+        },
+        {
+            "$ref": "./02.02.01-lab-accessing-the-command-line-using-the-desktop/learn-metadata.json"
+        },
+        {
+            "$ref": "./02.03-executing-commands-using-the-bash-shell/learn-metadata.json"
+        },
+        {
+            "$ref": "./02.03.01-quiz-executing-commands-using-the-bash-shell/learn-metadata.json"
+        },
+        {
+            "$ref": "./02.04-lab-accessing-the-command-line/learn-metadata.json"
+        },
+        {
+            "$ref": "./02.05-summary/learn-metadata.json"
+        }
+    ]
+}

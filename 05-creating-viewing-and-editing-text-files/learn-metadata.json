@@ -1,0 +1,33 @@
+{
+    "title": "Создание, просмотр и редактирование текстовых файлов",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./05.01-redirecting-output-to-a-file-or-program/learn-metadata.json"
+        },
+        {
+            "$ref": "./05.01.01-redirecting-output-to-a-file-or-program-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "./05.02-editing-text-files-from-the-shell-prompt/learn-metadata.json"
+        },
+        {
+            "$ref": "./05.02.01-lab-editing-text-files-from-the-shell-prompt/learn-metadata.json"
+        },
+        {
+            "$ref": "./05.03-changing-the-shell-environment/learn-metadata.json"
+        },
+        {
+            "$ref": "./05.03.01-lab-changing-the-shell-environment/learn-metadata.json"
+        },
+        {
+            "$ref": "./05.04-lab-creating-viewing-and-editing-text-files/learn-metadata.json"
+        },
+        {
+            "$ref": "./05.05-summary/learn-metadata.json"
+        }
+    ]
+}

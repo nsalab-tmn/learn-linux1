@@ -1,0 +1,33 @@
+{
+    "title": "Настройка и защита SSH",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./10.01-accessing-the-remote-command-line-with-ssh/learn-metadata.json"
+        },
+        {
+            "$ref": "./10.01.01-lab-accessing-the-remote-command-line-with-ssh/learn-metadata.json"
+        },
+        {
+            "$ref": "./10.02-configuring-ssh-key-based-authentication/learn-metadata.json"
+        },
+        {
+            "$ref": "./10.02.01-lab-configuring-ssh-key-based-authentication/learn-metadata.json"
+        },
+        {
+            "$ref": "./10.03-customizing-openssh-service-configuration/learn-metadata.json"
+        },
+        {
+            "$ref": "./10.03.01-lab-customizing-openssh-service-configuration/learn-metadata.json"
+        },
+        {
+            "$ref": "./10.04-lab-configuring-and-securing-ssh/learn-metadata.json"
+        },
+        {
+            "$ref": "./10.05-summary/learn-metadata.json"
+        }
+    ]
+}

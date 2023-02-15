@@ -1,0 +1,45 @@
+{
+    "title": "Анализ и сохранение log-файлов",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./11.01-describing-system-log-architecture/learn-metadata.json"
+        },
+        {
+            "$ref": "./11.01.01-describing-system-log-architecture-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "./11.02-reviewing-syslog-files/learn-metadata.json"
+        },
+        {
+            "$ref": "./11.02.01-lab-reviewing-syslog-files/learn-metadata.json"
+        },
+        {
+            "$ref": "./11.03-reviewing-system-journal-entries/learn-metadata.json"
+        },
+        {
+            "$ref": "./11.03.01-lab-reviewing-system-journal-entries/learn-metadata.json"
+        },
+        {
+            "$ref": "./11.04-preserving-the-system-journal/learn-metadata.json"
+        },
+        {
+            "$ref": "./11.04.01-lab-preserving-the-system-journal/learn-metadata.json"
+        },
+        {
+            "$ref": "./11.05-maintaining-accurate-time/learn-metadata.json"
+        },
+        {
+            "$ref": "./11.05.01-lab-maintaining-accurate-time/learn-metadata.json"
+        },
+        {
+            "$ref": "./11.06-lab-analyzing-and-storing-logs/learn-metadata.json"
+        },
+        {
+            "$ref": "./11.07-summary/learn-metadata.json"
+        }
+    ]
+}

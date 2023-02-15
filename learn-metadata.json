@@ -1,0 +1,54 @@
+{
+    "title": "Основы администрирования Linux",
+    "materialType": "learning-path",
+    "tags": {
+        "$ref": "./material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./01-getting-started/learn-metadata.json"
+        },
+        {
+            "$ref": "./02-accessing-the-command-line/learn-metadata.json"
+        },
+        {
+            "$ref": "./03-managing-files-from-the-command-line/learn-metadata.json"
+        },
+        {
+            "$ref": "./04-getting-help/learn-metadata.json"
+        },
+        {
+            "$ref": "./05-creating-viewing-and-editing-text-files/learn-metadata.json"
+        },
+        {
+            "$ref": "./06-managing-local-users-and-groups/learn-metadata.json"
+        },
+        {
+            "$ref": "./07-controlling-access-to-files/learn-metadata.json"
+        },
+        {
+            "$ref": "./08-monitoring-and-managing-linux-processes/learn-metadata.json"
+        },
+        {
+            "$ref": "./09-controlling-services-and-daemons/learn-metadata.json"
+        },
+        {
+            "$ref": "./10-configuring-and-securing-ssh/learn-metadata.json"
+        },
+        {
+            "$ref": "./11-analyzing-and-storing-logs/learn-metadata.json"
+        },
+        {
+            "$ref": "./12-managing-networking/learn-metadata.json"
+        },
+        {
+            "$ref": "./13-archiving-and-transferring-files/learn-metadata.json"
+        },
+        {
+            "$ref": "./14-installing-and-updating-software-packages/learn-metadata.json"
+        },
+        {
+            "$ref": "./15-accessing-linux-file-systems/learn-metadata.json"
+        }
+    ]
+}

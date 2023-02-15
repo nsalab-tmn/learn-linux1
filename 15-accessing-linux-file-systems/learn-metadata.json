@@ -1,0 +1,33 @@
+{
+    "title": "Доступ к файловым системам Linux",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./15.01-identifying-file-systems-and-devices/learn-metadata.json"
+        },
+        {
+            "$ref": "./15.01.01-identifying-file-systems-and-devices-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "./15.02-mounting-and-unmounting-file-systems/learn-metadata.json"
+        },
+        {
+            "$ref": "./15.02.01-lab-mounting-and-unmounting-file-systems/learn-metadata.json"
+        },
+        {
+            "$ref": "./15.03-locating-files-on-the-system/learn-metadata.json"
+        },
+        {
+            "$ref": "./15.03.01-lab-locating-files-on-the-system/learn-metadata.json"
+        },
+        {
+            "$ref": "./15.04-lab-accessing-linux-file-systems/learn-metadata.json"
+        },
+        {
+            "$ref": "./15.05-summary/learn-metadata.json"
+        }
+    ]
+}

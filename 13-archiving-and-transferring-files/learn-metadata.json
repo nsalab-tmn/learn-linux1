@@ -1,0 +1,33 @@
+{
+    "title": "Архивация и передача файлов",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./13.01-managing-compressed-tar-archives/learn-metadata.json"
+        },
+        {
+            "$ref": "./13.01.01-lab-managing-compressed-tar-archives/learn-metadata.json"
+        },
+        {
+            "$ref": "./13.02-transferring-files-between-systems-securely/learn-metadata.json"
+        },
+        {
+            "$ref": "./13.02.01-lab-transferring-files-between-systems-securely/learn-metadata.json"
+        },
+        {
+            "$ref": "./13.03-synchronizing-files-between-systems-securely/learn-metadata.json"
+        },
+        {
+            "$ref": "./13.03.01-lab-synchronizing-files-between-systems-securely/learn-metadata.json"
+        },
+        {
+            "$ref": "./13.04-lab-archiving-and-transferring-files/learn-metadata.json"
+        },
+        {
+            "$ref": "./13.05-summary/learn-metadata.json"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "title": "Управление доступом к файлам",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./07.01-interpreting-linux-file-system-permissions/learn-metadata.json"
+        },
+        {
+            "$ref": "./07.01.01-interpreting-linux-file-system-permissions-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "./07.02-managing-file-system-permissions-from-the-command-line/learn-metadata.json"
+        },
+        {
+            "$ref": "./07.02.01-lab-managing-file-system-permissions-from-the-command-line/learn-metadata.json"
+        },
+        {
+            "$ref": "./07.03-managing-default-permissions-and-file-access/learn-metadata.json"
+        },
+        {
+            "$ref": "./07.03.01-lab-managing-default-permissions-and-file-access/learn-metadata.json"
+        },
+        {
+            "$ref": "./07.04-lab-controlling-access-to-files/learn-metadata.json"
+        },
+        {
+            "$ref": "./07.05-summary/learn-metadata.json"
+        }
+    ]
+}

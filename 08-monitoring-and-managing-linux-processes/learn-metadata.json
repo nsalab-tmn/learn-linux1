@@ -1,0 +1,39 @@
+{
+    "title": "Мониторинг процессов Linux и управление ими",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./08.01-listing-processes/learn-metadata.json"
+        },
+        {
+            "$ref": "./08.01.01-listing-processes-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "./08.02-controlling-jobs/learn-metadata.json"
+        },
+        {
+            "$ref": "./08.02.01-lab-controlling-jobs/learn-metadata.json"
+        },
+        {
+            "$ref": "./08.03-killing-processes/learn-metadata.json"
+        },
+        {
+            "$ref": "./08.03.01-lab-killing-processes/learn-metadata.json"
+        },
+        {
+            "$ref": "./08.04-monitoring-process-activity/learn-metadata.json"
+        },
+        {
+            "$ref": "./08.04.01-lab-monitoring-process-activity/learn-metadata.json"
+        },
+        {
+            "$ref": "./08.05-lab-monitoring-and-managing-linux-processes/learn-metadata.json"
+        },
+        {
+            "$ref": "./08.06-summary/learn-metadata.json"
+        }
+    ]
+}

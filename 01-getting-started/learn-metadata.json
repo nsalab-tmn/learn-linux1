@@ -1,0 +1,15 @@
+{
+    "title": "Введение",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./01.01-what-is-linux/learn-metadata.json"
+        },
+        {
+            "$ref": "./01.02-quiz/learn-metadata.json"
+        }
+    ]
+}

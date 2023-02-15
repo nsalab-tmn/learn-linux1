@@ -1,0 +1,45 @@
+{
+    "title": "Управление сетями",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./12.01-describing-networking-concepts/learn-metadata.json"
+        },
+        {
+            "$ref": "./12.01.01-describing-networking-concepts-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "./12.02-validating-network-configuration/learn-metadata.json"
+        },
+        {
+            "$ref": "./12.02.01-lab-validating-network-configuration/learn-metadata.json"
+        },
+        {
+            "$ref": "./12.03-configuring-networking-from-the-command-line/learn-metadata.json"
+        },
+        {
+            "$ref": "./12.03.01-lab-configuring-networking-from-the-command-line/learn-metadata.json"
+        },
+        {
+            "$ref": "./12.04-editing-network-configuration-files/learn-metadata.json"
+        },
+        {
+            "$ref": "./12.04.01-lab-editing-network-configuration-files/learn-metadata.json"
+        },
+        {
+            "$ref": "./12.05-configuring-host-names-and-name-resolution/learn-metadata.json"
+        },
+        {
+            "$ref": "./12.05.01-lab-configuring-host-names-and-name-resolution/learn-metadata.json"
+        },
+        {
+            "$ref": "./12.06-lab-managing-networking/learn-metadata.json"
+        },
+        {
+            "$ref": "./12.07-summary/learn-metadata.json"
+        }
+    ]
+}

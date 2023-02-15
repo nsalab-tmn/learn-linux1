@@ -1,0 +1,45 @@
+{
+    "title": "Управление файлами из командной строки",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./03.01-describing-linux-file-system-hierarchy-concepts/learn-metadata.json"
+        },
+        {
+            "$ref": "./03.01.01-quiz-describing-linux-file-system-hierarchy-concepts/learn-metadata.json"
+        },
+        {
+            "$ref": "./03.02-specifying-files-by-name/learn-metadata.json"
+        },
+        {
+            "$ref": "./03.02.01-quiz-specifying-files-by-name/learn-metadata.json"
+        },
+        {
+            "$ref": "./03.03-managing-files-using-command-line-tools/learn-metadata.json"
+        },
+        {
+            "$ref": "./03.03.01-lab-managing-files-using-command-line-tools/learn-metadata.json"
+        },
+        {
+            "$ref": "./03.04-making-links-between-files/learn-metadata.json"
+        },
+        {
+            "$ref": "./03.04.01-lab-making-links-between-files/learn-metadata.json"
+        },
+        {
+            "$ref": "./03.05-matching-file-names-with-shell-expansions/learn-metadata.json"
+        },
+        {
+            "$ref": "./03.05.01-quiz-matching-file-names-with-shell-expansions/learn-metadata.json"
+        },
+        {
+            "$ref": "./03.06-lab-managing-files-from-the-command-line/learn-metadata.json"
+        },
+        {
+            "$ref": "./03.07-summary/learn-metadata.json"
+        }
+    ]
+}

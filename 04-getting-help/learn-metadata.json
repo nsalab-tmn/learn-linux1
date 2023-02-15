@@ -1,0 +1,27 @@
+{
+    "title": "Получение справки",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./04.01-reading-manual-pages/learn-metadata.json"
+        },
+        {
+            "$ref": "./04.01.01-lab-reading-manual-pages/learn-metadata.json"
+        },
+        {
+            "$ref": "./04.02-reading-info-documentation/learn-metadata.json"
+        },
+        {
+            "$ref": "./04.02.01-lab-reading-info-documentation/learn-metadata.json"
+        },
+        {
+            "$ref": "./04.03-lab-getting-help/learn-metadata.json"
+        },
+        {
+            "$ref": "./04.04-summary/learn-metadata.json"
+        }
+    ]
+}

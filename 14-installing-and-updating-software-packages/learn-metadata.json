@@ -1,0 +1,48 @@
+{
+    "title": "Установка и обновление программных пакетов",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./14.01-packages-and-repositiries/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.02-explaining-and-investigating-rpm-software-packages/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.02.01-lab-explaining-and-investigating-rpm-software-packages/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.03-explaining-and-investigating-deb-software-packages/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.04-installing-and-updating-software-packages-with-yum/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.04.01-lab-installing-and-updating-software-packages-with-yum/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.05-installing-and-updating-software-packages-with-apt/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.06-enabling-yum-software-repositories/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.06.01-lab-enabling-yum-software-repositories/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.07-managing-package-module-streams/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.07.01-lab-managing-package-module-streams/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.08-lab-installing-and-updating-software-packages/learn-metadata.json"
+        },
+        {
+            "$ref": "./14.09-summary/learn-metadata.json"
+        }
+    ]
+}

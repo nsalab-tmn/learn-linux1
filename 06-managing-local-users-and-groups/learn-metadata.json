@@ -1,0 +1,45 @@
+{
+    "title": "Управление локальными пользователями и группами",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./06.01-describing-user-and-group-concepts/learn-metadata.json"
+        },
+        {
+            "$ref": "./06.01.01-describing-user-and-group-concepts-quiz/learn-metadata.json"
+        },
+        {
+            "$ref": "./06.02-gaining-superuser-access/learn-metadata.json"
+        },
+        {
+            "$ref": "./06.02.01-lab-gaining-superuser-access/learn-metadata.json"
+        },
+        {
+            "$ref": "./06.03-managing-local-user-accounts/learn-metadata.json"
+        },
+        {
+            "$ref": "./06.03.01-lab-managing-local-user-accounts/learn-metadata.json"
+        },
+        {
+            "$ref": "./06.04-managing-local-group-accounts/learn-metadata.json"
+        },
+        {
+            "$ref": "./06.04.01-lab-managing-local-group-accounts/learn-metadata.json"
+        },
+        {
+            "$ref": "./06.05-managing-user-passwords/learn-metadata.json"
+        },
+        {
+            "$ref": "./06.05.01-lab-managing-user-passwords/learn-metadata.json"
+        },
+        {
+            "$ref": "./06.06-lab-managing-local-users-and-groups/learn-metadata.json"
+        },
+        {
+            "$ref": "./06.07-summary/learn-metadata.json"
+        }
+    ]
+}

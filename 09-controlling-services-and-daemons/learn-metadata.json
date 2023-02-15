@@ -1,0 +1,27 @@
+{
+    "title": "Управление службами и демонами",
+    "materialType": "course",
+    "tags": {
+        "$ref": "../material-tags.json"
+    },
+    "materials": [
+        {
+            "$ref": "./09.01-identifying-automatically-started-system-processes/learn-metadata.json"
+        },
+        {
+            "$ref": "./09.01.01-lab-identifying-automatically-started-system-processes/learn-metadata.json"
+        },
+        {
+            "$ref": "./09.02-controlling-system-services/learn-metadata.json"
+        },
+        {
+            "$ref": "./09.02.01-lab-controlling-system-services/learn-metadata.json"
+        },
+        {
+            "$ref": "./09.03-lab-controlling-services-and-daemons/learn-metadata.json"
+        },
+        {
+            "$ref": "./09.04-summary/learn-metadata.json"
+        }
+    ]
+}

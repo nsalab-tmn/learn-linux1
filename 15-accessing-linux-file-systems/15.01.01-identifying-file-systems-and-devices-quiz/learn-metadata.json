@@ -1,0 +1,127 @@
+{
+  "title": "Тест на понимание темы: Перенаправление вывода в файл или программу",
+  "materialType": "test",
+  "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+  "difficulty": 1,
+  "duration": "PT0H30M",
+  "tags": {
+    "$ref": "../../material-tags.json"
+  },
+  "skills": {},
+  "passingScore": 100,
+  "assets": {
+    "$ref": "./assets"
+  },
+  "questions": [
+    {
+      "question": "Как называется файл устройства всего жесткого диска SATA в каталоге /dev?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "/dev/vda",
+          "correct": false
+        },
+        {
+          "answer": "/dev/sda1",
+          "correct": false
+        },
+        {
+          "answer": "/dev/sda",
+          "correct": true
+        },
+        {
+          "answer": "/dev/vg_install/lv_home",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Как называется файл устройства для третьего раздела на втором жестком диске SATA.",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "/dev/vda2",
+          "correct": false
+        },
+        {
+          "answer": "/dev/sda3",
+          "correct": false
+        },
+        {
+          "answer": "/dev/sdb2",
+          "correct": false
+        },
+        {
+          "answer": "/dev/sdb3",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Как называется файл устройства всего второго диска virtio-blk, подключенного к виртуальной машине?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "/dev/vda2",
+          "correct": false
+        },
+        {
+          "answer": "/dev/sda2",
+          "correct": false
+        },
+        {
+          "answer": "/dev/vdb2",
+          "correct": false
+        },
+        {
+          "answer": "/dev/vdb",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "question": "Выберите правильное имя файла устройства для третьего раздела на втором диске virtio-blk, подключенном к виртуальной машине?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "/dev/vda3",
+          "correct": false
+        },
+        {
+          "answer": "/dev/sda3",
+          "correct": false
+        },
+        {
+          "answer": "/dev/vdb3",
+          "correct": true
+        },
+        {
+          "answer": "/dev/vda3",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "question": "Какая команда предоставляет обзор точек монтирования файловой системы и количества свободного места, доступного в единицах СИ?",
+      "answerType": "singleChoice",
+      "answers": [
+        {
+          "answer": "df",
+          "correct": false
+        },
+        {
+          "answer": "df -H",
+          "correct": true
+        },
+        {
+          "answer": "df -h",
+          "correct": false
+        },
+        {
+          "answer": "du -h",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
